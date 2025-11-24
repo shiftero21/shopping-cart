@@ -21,7 +21,7 @@ const routes = [
         element: <Shop />,
       },
       {
-        path: "shopping/:productId",
+        path: "shopping/:slug",
         element: <ProductDetailsPage />,
       },
       {
