@@ -1,0 +1,10 @@
+/* CSS base para todos los enlaces */
+.nav-link {
+  color: gray;
+  text-decoration: none;
+}
+/* CSS solo para el enlace ACTIVO */
+.nav-link.active {
+  color: rgb(51, 255, 0); /* Por ejemplo, lo pone azul */
+  font-weight: bold; /* Y en negrita */
+}
