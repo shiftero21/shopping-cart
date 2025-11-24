@@ -3,9 +3,10 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import "./reset.css";
 import App from "./app/App";
+import { createBrowserRouter, RouterProvider } from "react-router";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <App />
+    <RouterProvider router={router}></RouterProvider>
   </StrictMode>
 );
