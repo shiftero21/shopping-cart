@@ -1,6 +1,7 @@
 import NavigationBar from "../components/Navigation/NavBar";
 import { Outlet } from "react-router";
 import styles from "./App.module.css";
+import Footer from "../components/Footer/Footer";
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <NavigationBar></NavigationBar>
 
       <Outlet></Outlet>
+
+      <Footer></Footer>
     </div>
   );
 }
