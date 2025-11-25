@@ -5,10 +5,7 @@ const ProductCard = ({ name, price, desc, slug, src, categ }) => {
     <div className={styles.wrapper}>
       <h1>Titulo Carta Generico</h1>
 
-      <div
-        // key={key}
-        className={styles.prodListCont}
-      >
+      <div className={styles.prodListCont}>
         <img
           src={src}
           alt={desc}

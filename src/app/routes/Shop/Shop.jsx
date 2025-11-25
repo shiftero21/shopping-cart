@@ -8,7 +8,6 @@ const Shop = () => {
 
   return (
     <div className={styles.wrapper}>
-      <h1>Nuestros Cargadores Portátiles</h1>
       {products.map((product) => (
         // ⭐️ Usamos el SLUG en el Link para que vaya a la ruta dinámica
 
