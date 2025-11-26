@@ -1,0 +1,28 @@
+
+@font-face {
+  font-family: 'font-header';
+  src: url(/src/assets/fonts/Orbitron-ExtraBold.ttf);
+}
+
+.header {
+  width: 100%;
+margin: 0 auto;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rebeccapurple;
+  justify-content: center;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header__logo {
+  font-family: 'font-header', sans-serif;
+  font-size: 3.5rem;
+}
