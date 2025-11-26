@@ -1,0 +1,36 @@
+.navbar {
+  /* margin: 0 auto; */
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  z-index: 99999;
+  position:-webkit-sticky;
+  position: sticky;
+  top: 10px;
+}
+
+.navbar__items {
+  display: flex;
+  gap: 12px;
+  text-align: center;
+  align-items: center;
+}
+
+/* CSS base para todos los enlaces */
+.nav-link {
+  color: gray;
+  text-decoration: none;
+}
+
+/* CSS solo para el enlace ACTIVO */
+.nav-link.active {
+  color: rgb(0, 17, 255);
+  /* Por ejemplo, lo pone azul */
+  font-weight: bold;
+  /* Y en negrita */
+  border: 1px solid rgb(10, 10, 10);
+  padding: 10px;
+  border-radius: 12px;
+}

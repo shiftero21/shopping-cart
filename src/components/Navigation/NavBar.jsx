@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "./NavBar.css";
 
 function NavigationBar() {
   // Define la clase de estilo activo para el NavLink
@@ -7,7 +8,7 @@ function NavigationBar() {
 
   return (
     <nav className="navbar">
-      <div>
+      <div className="navbar__items">
         <NavLink
           to="/"
           className={activeStyle}
@@ -24,7 +25,7 @@ function NavigationBar() {
           to="/cart"
           className={activeStyle}
         >
-          Carrito 🛒
+          Carrito
         </NavLink>
       </div>
     </nav>
