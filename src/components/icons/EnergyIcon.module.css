@@ -1,0 +1,50 @@
+/* EnergyIcon.module.css */
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+/*
+  1. Estilos Base (Línea Gris - Siempre visible)
+*/
+.pathBase {
+  /* No necesita animaciones, solo es el fondo */
+}
+
+/*
+  2. Estilos Animados (Línea Amarilla - Oculta inicialmente)
+*/
+.pathAnimated {
+  /*
+    Valores clave para el efecto de dibujo:
+    - stroke-dasharray: Un valor grande (ej. 200) para crear un guion
+      del tamaño de toda la línea, seguido por un gran espacio.
+  */
+  stroke-dasharray: 200; 
+
+  /*
+    - stroke-dashoffset: Inicialmente el valor del dasharray (200).
+      Esto "desplaza" el inicio del guion 200 unidades, poniendo el
+      espacio vacío sobre la línea, por lo que el trazo amarillo está OCULTO.
+  */
+  stroke-dashoffset: 200; 
+
+  /*
+    - transition: Animamos el offset para que el guion (la línea amarilla)
+      se revele suavemente.
+  */
+  transition: stroke-dashoffset 2.8s ease-out;
+}
+
+/*
+  3. Efecto Hover (Revelar la línea Amarilla)
+*/
+.container:hover .pathAnimated {
+  /*
+    Al hacer hover, movemos el offset a 0.
+    Esto hace que el guion (la línea amarilla) se desplace de 200 a 0,
+    creando el efecto de "dibujado" gradual sobre la línea gris base.
+  */
+  stroke-dashoffset: 0;
+}

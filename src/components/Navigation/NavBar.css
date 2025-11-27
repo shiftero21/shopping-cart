@@ -16,6 +16,7 @@
   width: 100%;
   padding: 0.4rem;
   display: flex;
+  gap: 12px;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.952);
 

@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import "./NavBar.css";
+import EnergyIcon from "../icons/EnergyIcon";
 
 function NavigationBar({ navBarClass }) {
   // Define la clase de estilo activo para el NavLink
@@ -8,6 +9,7 @@ function NavigationBar({ navBarClass }) {
 
   return (
     <nav className={`navBarBase ${navBarClass}`}>
+      <EnergyIcon></EnergyIcon>
       <div className="navbar__items">
         <NavLink
           to="/"
