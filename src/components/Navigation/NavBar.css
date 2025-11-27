@@ -1,5 +1,4 @@
-.navbar {
-  /* margin: 0 auto; */
+/* .navBarClass {
   width: 100%;
   padding: 1rem;
   border: 1px solid black;
@@ -9,28 +8,57 @@
   position:-webkit-sticky;
   position: sticky;
   top: 10px;
+  background-color: rgba(0, 0, 0, 0.18);
+} */
+
+/* 1. Clase Base para el estilo fijo y la transición */
+.navBarBase {
+  width: 100%;
+  padding: 0.4rem;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.952);
+
+  position: sticky;
+  /* top: 30px; */
+  top:0;
+  /* Asegura que comienza en la parte superior */
+  z-index: 99999;
+
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.navbar--hidden {
+  /* Mueve la barra verticalmente hacia arriba por su propia altura (100%) 
+     para esconderla fuera del área visible del navegador. */
+  transform: translateY(-100%);
+}
+
+
+.navbar--visible {
+  /* La trae de vuelta a su posición normal (arriba) */
+  transform: translateY(0);
 }
 
 .navbar__items {
   display: flex;
-  gap: 12px;
+  gap: 24px;
   text-align: center;
   align-items: center;
 }
 
-/* CSS base para todos los enlaces */
 .nav-link {
-  color: gray;
+    color: rgb(255, 255, 255);
+  padding: 5px;
+
   text-decoration: none;
 }
 
-/* CSS solo para el enlace ACTIVO */
 .nav-link.active {
-  color: rgb(0, 17, 255);
-  /* Por ejemplo, lo pone azul */
+  color: rgb(100, 109, 228);
   font-weight: bold;
   /* Y en negrita */
-  border: 1px solid rgb(10, 10, 10);
-  padding: 10px;
+  border: 1px solid rgb(251, 251, 251);
   border-radius: 12px;
 }
