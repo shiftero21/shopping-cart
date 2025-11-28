@@ -11,18 +11,22 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  border: 1px solid rebeccapurple;
   justify-content: center;
   text-align: center;
 }
 
 .main {
+  padding-block: 1rem;
+  padding-inline: 0.5rem;
   display: flex;
-  margin: 0 auto;
-  padding: 1rem;
+  margin-top: 12px ;
+  margin-inline: auto;
+    border: 3px solid black;
+  border-radius: 0.6rem;
 }
 
 .header__logo {
+
   font-family: 'font-header', sans-serif;
   font-size: 3.5rem;
 }
