@@ -35,7 +35,7 @@ a > svg {
 
 }
 a:hover {
-  border-bottom: solid rgb(37 99 235);
+  border-bottom: solid rgb(168, 100, 228);
   text-decoration: none; /* Quitar el underline por defecto */;
 }
 

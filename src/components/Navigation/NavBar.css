@@ -1,15 +1,4 @@
-/* .navBarClass {
-  width: 100%;
-  padding: 1rem;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  z-index: 99999;
-  position:-webkit-sticky;
-  position: sticky;
-  top: 10px;
-  background-color: rgba(0, 0, 0, 0.18);
-} */
+
 
 /* 1. Clase Base para el estilo fijo y la transición */
 .navBarBase {
@@ -25,8 +14,11 @@
   top:0;
   /* Asegura que comienza en la parte superior */
   z-index: 99999;
-
   transition: transform 0.3s ease-in-out;
+      user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
 }
 
 
@@ -57,9 +49,9 @@
 }
 
 .nav-link.active {
-  color: rgb(100, 109, 228);
+  color: rgb(168, 100, 228);
   font-weight: bold;
   /* Y en negrita */
-  border: 1px solid rgb(251, 251, 251);
+  border: 1px solid rgb(168, 100, 228);
   border-radius: 12px;
 }
