@@ -10,9 +10,38 @@
 
 .wrapper {
   display: flex;
-  padding: 0.75rem;
   min-height: 100vh;
   margin: 0 auto;
+  
+  background-color: #ffffff;
+
+  background-image:
+    linear-gradient(to bottom,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 150px),
+
+    linear-gradient(to top,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 150px),
+
+    repeating-linear-gradient(0deg,
+      transparent,
+      transparent 50px,
+      rgba(0, 0, 0, 0.2) 51px,
+      rgba(0, 0, 0, 0.2) 52px),
+
+    repeating-linear-gradient(90deg,
+      transparent,
+      transparent 50px,
+      rgba(0, 0, 0, 0.2) 51px,
+      rgba(0, 0, 0, 0.2) 52px);
+
+
+  background-size: 100% 100%, 100% 100%, 52px 52px, 52px 52px;
+
+  background-repeat: no-repeat, no-repeat, repeat, repeat;
+
+  background-position: top, bottom, 0 0, 0 0;
 
 }
 
