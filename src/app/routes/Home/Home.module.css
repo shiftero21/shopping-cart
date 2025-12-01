@@ -8,13 +8,17 @@
   src: url(/src/assets/fonts/BlackOpsOne-Regular.ttf);
 }
 
+.total {
+    display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+}
 .wrapper {
   display: flex;
   min-height: 100vh;
   /* margin: 0 auto; */
   /* max-width: 1800px; */
-  background-color: #ffffff;
-
   background-image:
     linear-gradient(to bottom,
       #ffffff 0%,
@@ -42,6 +46,7 @@
   background-repeat: no-repeat, no-repeat, repeat, repeat;
 
   background-position: top, bottom, 0 0, 0 0;
+
 
 }
 
