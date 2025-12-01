@@ -81,9 +81,12 @@
 }
 
 .header__logo {
-
   font-family: 'font-header', sans-serif;
   font-size: 3.5rem;
+}
+
+.header__logo h1 {
+  line-height: 1; 
 }
 
 .wrapperNav {
