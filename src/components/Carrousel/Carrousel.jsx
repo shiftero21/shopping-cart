@@ -1,30 +1,30 @@
 import { useEffect, useState } from "react";
 import "./Carrousel.css";
 
-import carg01 from "../../assets/images/anker.webp";
-import carg02 from "../../assets/images/anker-02.avif";
-import carg03 from "../../assets/images/sharker-03.webp";
-import carg04 from "../../assets/images/anker-04.webp";
+// import carg01 from "../../assets/images/anker.webp";
+// import carg02 from "../../assets/images/anker-02.avif";
+// import carg03 from "../../assets/images/sharker-03.webp";
+// import carg04 from "../../assets/images/anker-04.webp";
 
-const Carrousel = () => {
-  const images = [
-    {
-      id: 1,
-      url: carg01,
-    },
-    {
-      id: 2,
-      url: carg02,
-    },
-    {
-      id: 3,
-      url: carg03,
-    },
-    {
-      id: 4,
-      url: carg04,
-    },
-  ];
+const Carrousel = ({ images, sizeClass = "" }) => {
+  // const images = [
+  //   {
+  //     id: 1,
+  //     url: carg01,
+  //   },
+  //   {
+  //     id: 2,
+  //     url: carg02,
+  //   },
+  //   {
+  //     id: 3,
+  //     url: carg03,
+  //   },
+  //   {
+  //     id: 4,
+  //     url: carg04,
+  //   },
+  // ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -51,7 +51,7 @@ const Carrousel = () => {
   }, [currentImageIndex]);
 
   return (
-    <section>
+    <section className={sizeClass}>
       <div className="image-container">
         {/* <button
           className="nav-button left"

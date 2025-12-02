@@ -30,7 +30,7 @@ h2 {
   /* border-radius: 1rem; */
   /* background-color: #fff; */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-  height: auto;
+  height: 100%;
 }
 
 .image-container img {
@@ -130,4 +130,21 @@ img.block {
 /* Opcional: Estilo de hover para mejor UX */
 .dot:hover:not(.active) {
   background-color: #888;
+}
+
+
+.small-carrousel {
+  height: 400px; /* Alto más pequeño */
+  max-width: 500px; /* Ancho máximo limitado */
+  box-shadow: none;
+}
+
+/* Ajuste fino para la imagen dentro del carrusel pequeño */
+.small-carrousel .image-container {
+  height: 100%; /* Asegura que el contenedor de la imagen tome el alto de la sección */
+}
+
+.small-carrousel .image-container img {
+  object-fit: cover; /* Opcional: para que la imagen completa se vea */
+  height: 100%;
 }
