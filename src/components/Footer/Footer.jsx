@@ -76,7 +76,7 @@ export default function Footer({ currentColor = "black" }) {
           target="_blank"
           href="https://github.com/TheOdinProject"
         >
-          Shifter©
+          Developed by Shifter©
         </a>
       </footer>
     </div>
