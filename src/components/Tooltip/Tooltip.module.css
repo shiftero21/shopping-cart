@@ -1,0 +1,71 @@
+.wrapper {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.tooltipContent {
+  font-size: 12px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 20px #00000020;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 200px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.pin {
+  position: absolute;
+  content: "";
+  /* top: 50%;
+  left: 80%; */
+  height: 25px;
+  width: 25px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pin:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(58, 55, 55);
+  border-radius: 50%;
+  animation: puls-effect 2s ease infinite;
+}
+
+.tooltip3 .pin {
+  top: 7%;
+  right: 35%;
+  height: 50px;
+  width: 50px;
+}
+
+  .tooltip.active .tooltipContent {
+  opacity: 1;
+  pointer-events: all;
+  display: block;
+}
+
+/* Puls Effect For Pins */
+
+@keyframes puls-effect {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
