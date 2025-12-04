@@ -1,5 +1,4 @@
 import products from "../../../utils/data/products";
-import { Link } from "react-router";
 import styles from "./Shop.module.css";
 import ProductCard from "../../../components/ProductCard/ProductCard";
 
@@ -13,12 +12,7 @@ const Shop = () => {
 
         <ProductCard
           key={product.id}
-          name={product.name}
-          src={product.src}
-          price={product.price.toFixed(2)}
-          slug={product.slug}
-          categ={product.category}
-          desc={product.description}
+          product={product}
         ></ProductCard>
       ))}
     </div>
