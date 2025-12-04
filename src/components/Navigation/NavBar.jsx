@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import EnergyIcon from "../icons/EnergyIcon";
 
-function NavigationBar({ navBarClass }) {
+function NavigationBar({ navBarClass, totalItems }) {
   // Define la clase de estilo activo para el NavLink
   const activeStyle = ({ isActive }) =>
     isActive ? "nav-link active" : "nav-link";
@@ -27,7 +27,8 @@ function NavigationBar({ navBarClass }) {
           to="/cart"
           className={activeStyle}
         >
-          Carrito
+          <span>Carrito</span>
+          {totalItems > 0 && <span className="cart-badge">({totalItems})</span>}
         </NavLink>
       </div>
     </nav>
