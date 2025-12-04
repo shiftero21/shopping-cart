@@ -15,6 +15,7 @@
 
 .wrapper {
   display: flex;
+  margin-inline: 12px;
   flex-direction: column;
   justify-content: center;
   text-align: center;
