@@ -2,7 +2,7 @@ import styles from "./Tooltip.module.css";
 
 const Tooltip = () => {
   return (
-    <div classNameName={styles.wrapper}>
+    <div className={styles.wrapper}>
       <div className={`${styles.tooltip} ${styles.tooltip3}`}>
         <div className={styles.pin}></div>
         <div className={styles.tooltipContent}>

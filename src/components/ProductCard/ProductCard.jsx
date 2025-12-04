@@ -10,14 +10,19 @@ const ProductCard = ({ product }) => {
     <div className={styles.wrapper}>
       <h1>Titulo Carta Generico</h1>
       <div className={styles.prodListCont}>
-        <img
-          src={src}
-          alt={description}
-        />
+        <Link to={`/shopping/${slug}`}>
+          <div className={styles.wrapper__img}>
+            <img
+              className="transition-transform duration-300 ease-in-out hover:scale-[1.15]"
+              src={src}
+              alt={description}
+            />
+          </div>
+        </Link>
         <h2>{name}</h2>
         <p>Price{price}</p>
         <p>{description}</p>
-        <Link to={`/shopping/${slug}`}>Ver Detalles</Link>
+
         <button onClick={() => addToCart(product)}>Añadir al carrito</button>
       </div>
     </div>
