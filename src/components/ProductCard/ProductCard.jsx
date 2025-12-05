@@ -8,8 +8,8 @@ const ProductCard = ({ product }) => {
   const { cart, addToCart } = useOutletContext();
   return (
     <div className={styles.wrapper}>
-      <h1>Titulo Carta Generico</h1>
-      <div className={styles.prodListCont}>
+      <h1 className="mb-2">NEW</h1>
+      <div className={styles.wrapper__main}>
         <Link to={`/shopping/${slug}`}>
           <div className={styles.wrapper__img}>
             <img
@@ -18,12 +18,14 @@ const ProductCard = ({ product }) => {
               alt={description}
             />
           </div>
+          <h2 className={styles.wrapper__title}>Powerbank</h2>
         </Link>
-        <h2>{name}</h2>
-        <p>Price{price}</p>
-        <p>{description}</p>
+        <p className={styles.wrapper__desc}>{description}</p>
 
-        <button onClick={() => addToCart(product)}>Añadir al carrito</button>
+        <div className={styles.buyDetails}>
+          <span className={styles.wrapper__price}>Price: {price}</span>
+          <button onClick={() => addToCart(product)}>Añadir al carrito</button>
+        </div>
       </div>
     </div>
   );
