@@ -56,7 +56,7 @@ const HomePage = () => {
         </div>
         <div className={styles.wrapperHeader}>
           <div className={styles.header}>
-            <Tooltip></Tooltip>
+            {/* <Tooltip></Tooltip> */}
             <h1>POWERBANKS</h1>
           </div>
           <div className={styles.headerImage}></div>
