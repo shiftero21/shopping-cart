@@ -44,7 +44,7 @@ function NavigationBar({ navBarClass, totalItems, cartUpdateSignal }) {
         </NavLink>
         <NavLink
           to="/cart"
-          className="relative transition duration-150"
+          className={activeStyle}
         >
           <span className="text-xl">🛒</span>
 
@@ -58,6 +58,7 @@ function NavigationBar({ navBarClass, totalItems, cartUpdateSignal }) {
               text-white transform translate-x-1/2 -translate-y-1/2 
               bg-red-600 rounded-full 
               transition-all duration-150 ease-in-out
+              
               ${animationClass} 
             `}
             >
