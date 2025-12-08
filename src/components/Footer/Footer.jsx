@@ -1,9 +1,8 @@
-import "./Footer.css";
-
+import styles from "./Footer.module.css";
 export default function Footer({ currentColor = "black" }) {
   return (
-    <div className="wrapper-footer flex">
-      <footer className="flex">
+    <div className={styles.wrapperFooter}>
+      <footer className="">
         <a
           target="_blank"
           href="https://github.com/TheOdinProject"
