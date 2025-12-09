@@ -59,16 +59,18 @@ function Cart() {
             className="flex items-center p-4 border rounded-lg bg-indigo-50/30 shadow-sm transition duration-300 hover:bg-indigo-100/50"
           >
             {/* Imagen del producto */}
-            <img
-              src={item.src}
-              alt={item.name}
-              className="w-16 h-16 object-cover rounded-md mr-4"
-              onError={(e) => {
-                e.target.onerror = null;
-                e.target.src =
-                  "https://placehold.co/64x64/E0E7FF/4338CA?text=Prod";
-              }}
-            />
+            <Link to={`/shopping/${item.slug}`}>
+              <img
+                src={item.src}
+                alt={item.name}
+                className="w-16 h-16 object-cover rounded-md mr-4"
+                onError={(e) => {
+                  e.target.onerror = null;
+                  e.target.src =
+                    "https://placehold.co/64x64/E0E7FF/4338CA?text=Prod";
+                }}
+              />
+            </Link>
 
             <div className="flex-grow">
               <h3 className="text-xl font-semibold text-gray-800">
