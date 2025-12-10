@@ -9,7 +9,6 @@ import useScrollDirection from "../hooks/useScrollDirection";
 
 function App() {
   const [cart, setCart] = useState([]);
-  const [cartUpdateSignal, setCartUpdateSignal] = useState(0);
 
   const getTotalItems = () => {
     return cart.reduce((total, item) => total + item.cantidad, 0);
@@ -34,7 +33,6 @@ function App() {
       };
       setCart([...cart, newCartItem]);
     }
-    setCartUpdateSignal((prev) => prev + 1);
   };
 
   const scrollDirection = useScrollDirection();
@@ -46,7 +44,6 @@ function App() {
       <NavigationBar
         navBarClass={navBarClass}
         totalItems={totalItems}
-        cartUpdateSignal={cartUpdateSignal}
       ></NavigationBar>
       <Header></Header>
       <Outlet context={{ cart, addToCart }}></Outlet>

@@ -3,7 +3,7 @@ import "./NavBar.css";
 import EnergyIcon from "../icons/EnergyIcon";
 import { useState, useEffect } from "react";
 
-function NavigationBar({ navBarClass, totalItems, cartUpdateSignal }) {
+function NavigationBar({ navBarClass, totalItems }) {
   // Define la clase de estilo activo para el NavLink
   const activeStyle = ({ isActive }) =>
     isActive ? "nav-link active" : "nav-link";
@@ -12,7 +12,7 @@ function NavigationBar({ navBarClass, totalItems, cartUpdateSignal }) {
 
   useEffect(() => {
     // Solo animamos si la señal es > 0 (es decir, ya se añadió algo)
-    if (cartUpdateSignal > 0) {
+    if (totalItems > 0) {
       // 1. Aplicar clase de animación (ej: un pequeño pulso)
       setAnimationClass("animate-pulse bg-yellow-400");
 
@@ -24,7 +24,7 @@ function NavigationBar({ navBarClass, totalItems, cartUpdateSignal }) {
       // Función de limpieza para evitar fugas de memoria
       return () => clearTimeout(timer);
     }
-  }, [cartUpdateSignal]);
+  }, [totalItems]);
 
   return (
     <nav className={`navBarBase ${navBarClass}`}>
