@@ -5,6 +5,7 @@
   display: flex;
   gap: 12px;
   justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.952);
   position: sticky;
   top: 0;
