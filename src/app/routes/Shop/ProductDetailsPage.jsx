@@ -7,20 +7,15 @@ import BackIcon from "../../../components/icons/BackIcon";
 import AddToCartBtn from "../../../components/common/AddToCartBtn.jsx";
 
 function ProductDetailsPage() {
-  // 1. Obtener el 'slug' de la URL (el nombre del parámetro debe coincidir con el del router)
   const { slug } = useParams();
-
-  // 2. Buscar el producto que coincide con ese 'slug'
   const product = products.find((p) => p.slug === slug);
-
   const { addToCart } = useOutletContext();
 
-  // 3. Renderizar la información del producto
   return (
     <div className={styles.wrapper}>
       <Link
         to="/shopping"
-        className="flex  content-center items-center text-center text-indigo-600 hover:text-indigo-800 font-medium mt-2"
+        className="flex gap-2 items-center text-2xl text-center text-indigo-600 hover:text-indigo-800 font-medium my-2"
       >
         <BackIcon></BackIcon>
         Seguir Comprando

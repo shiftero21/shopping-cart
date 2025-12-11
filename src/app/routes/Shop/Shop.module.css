@@ -6,7 +6,6 @@
   gap: clamp(12px, 2vw, 20px);
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding-inline: 1rem;
-
   max-width: 1200px;
   /* border: 1px solid red; */
   margin: 0 auto;
