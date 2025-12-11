@@ -1,6 +1,7 @@
 import styles from "./ProductCard.module.css";
 import { Link } from "react-router-dom";
 import { useOutletContext } from "react-router-dom";
+import AddToCartBtn from "../common/AddToCartBtn";
 
 const ProductCard = ({ product }) => {
   const { id, name, price, description, slug, src, category } = product;
@@ -24,7 +25,13 @@ const ProductCard = ({ product }) => {
 
         <div className={styles.buyDetails}>
           <span className={styles.wrapper__price}>Price: {price}</span>
-          <button onClick={() => addToCart(product)}>Añadir al carrito</button>
+          <AddToCartBtn
+            product={product}
+            addToCart={addToCart}
+            className="w-50 py-2 px-2 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:bg-indigo-700 transition duration-800 transform hover:scale-[1.01] active:outline-none active:ring-4 active:ring-indigo-300"
+          >
+            Agregar al carrito
+          </AddToCartBtn>
         </div>
       </div>
     </div>
