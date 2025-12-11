@@ -21,25 +21,30 @@ function ProductDetailsPage() {
         Seguir Comprando
       </Link>
 
-      <h1>{product.name}</h1>
-      <img
-        src={product.src}
-        alt={product.name}
-        style={{ maxWidth: "300px" }}
-      />
-      <p>Precio: ${product.price}</p>
-      <p>Categoría: {product.category}</p>
-      <p>{product.description}</p>
-
-      <Link to="/cart">
-        <AddToCartBtn
-          product={product}
-          addToCart={addToCart}
-          className="w-60 py-2 px-2 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-indigo-300"
-        >
-          Comprar ahora
-        </AddToCartBtn>
-      </Link>
+      <div className={styles.wrapper__main}>
+        <h2 className={styles.wrapper__title}>{product.name}</h2>
+        <div className={styles.wrapper__img}>
+          <img
+            src={product.src}
+            alt={product.name}
+            style={{ maxWidth: "300px" }}
+          />
+        </div>
+        <p className={styles.wrapper__desc}>{product.description}</p>
+        <div className={styles.buyDetails}>
+          <span>{product.category}</span>
+          <span className={styles.wrapper__price}>Price: {product.price}</span>
+          <Link to="/cart">
+            <AddToCartBtn
+              product={product}
+              addToCart={addToCart}
+              className="w-50 py-2 px-2 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-indigo-300"
+            >
+              Comprar ahora
+            </AddToCartBtn>
+          </Link>
+        </div>
+      </div>
     </div>
   );
 }

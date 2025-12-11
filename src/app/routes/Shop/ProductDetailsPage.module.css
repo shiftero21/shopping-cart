@@ -1,7 +1,73 @@
+@font-face {
+  font-family: font-orbitron;
+  src: url(/src/assets/fonts/Orbitron-Bold.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: font-orbitron;
+  src: url(/src/assets/fonts/Orbitron-Regular.ttf);
+  font-weight: 400;
+}
+
+
 .wrapper {
-  border: 1px solid red;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 1rem;
+  box-shadow:
+    inset 0 4px 8px rgba(0, 0, 0, 0.1),
+    /* sombra interna superior */
+    inset 0 -4px 8px rgba(0, 0, 0, 0.05),
+    /* sombra interna inferior */
+    0 8px 20px rgba(0, 0, 0, 0.15);
+  /* sombra externa para realismo */
+  padding: 1rem;
+  font-family: font-orbitron;
   max-width: 400px;
-  margin: 0 auto;
+}
+
+.wrapper__img {
+  height: 300px;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.wrapper__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper__title {
+  font-size: clamp(1.2rem, 4.5vw, 1.5rem);
+  margin-bottom: 0.6rem;
+  font-family: font-orbitron;
+  font-weight: 700;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.wrapper__desc {
+   font-family: font-orbitron;
+  font-weight: 400;
+}
+.buyDetails {
   display: flex;
-  flex-direction: column;
+  font-size: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper__price {
+  display: inline-block;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+
+@media (max-width: 900px) { 
+  .wrapper {
+    margin: 0 auto;
+  }
 }
