@@ -25,7 +25,10 @@ function ProductDetailsPage() {
       <div className={styles.wrapper__main}>
         <h2 className={styles.wrapper__title}>{product.name}</h2>
         <div className={styles.wrapper__img}>
-          <Carrousel images={product.carouselImages} />
+          <Carrousel
+            images={product.carouselImages}
+            sizeClass="small-carrousel"
+          />
         </div>
         <p className={styles.wrapper__desc}>{product.description}</p>
         <div className={styles.buyDetails}>
