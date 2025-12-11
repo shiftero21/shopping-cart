@@ -1,14 +1,14 @@
 import uniqid from "uniqid";
 
-import carg01 from "../../assets/images/cargador-portatil-01-1.png";
-import carg02 from "../../assets/images/cargador-portatil-02.jpg";
-import carg03 from "../../assets/images/cargador-portatil-03.jpg";
-import carg04 from "../../assets/images/cargador-portatil-04.jpg";
-import carg05 from "../../assets/images/cargador-portatil-05.jpg";
-import carg06 from "../../assets/images/cargador-portatil-06.jpg";
-import carg07 from "../../assets/images/cargador-portatil-07.jpg";
-import carg08 from "../../assets/images/cargador-portatil-08.jpg";
-import carg09 from "../../assets/images/transparent.jpg";
+import carg01 from "../../assets/images/products/cargador-portatil-01-1.png";
+import carg02 from "../../assets/images/products/cargador-portatil-02.jpg";
+import carg03 from "../../assets/images/products/cargador-portatil-03.jpg";
+import carg04 from "../../assets/images/products/cargador-portatil-04.jpg";
+import carg05 from "../../assets/images/products/cargador-portatil-05.jpg";
+import carg06 from "../../assets/images/products/cargador-portatil-06.jpg";
+import carg07 from "../../assets/images/products/cargador-portatil-07.jpg";
+import carg08 from "../../assets/images/products/cargador-portatil-08.jpg";
+import carg09 from "../../assets/images/products/shark-transp-02/flat.jpg";
 
 const min = 4.99;
 const max = 24.99;
