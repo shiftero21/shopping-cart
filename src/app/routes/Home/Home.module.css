@@ -1,23 +1,26 @@
 @font-face {
-  font-family: font-title;
+  font-family: font-orbitron;
   src: url(/src/assets/fonts/Orbitron-Bold.ttf);
+  font-weight: 700;
 }
 
+
 @font-face {
-  font-family: font-header;
+  font-family: "Black Ops One";
   src: url(/src/assets/fonts/BlackOpsOne-Regular.ttf);
+  font-weight: 400;
 }
 
 .total {
-    display: flex;
+  display: flex;
   min-height: 100vh;
   flex-direction: column;
 
 }
+
 .wrapper {
   display: flex;
-    padding: 1rem;
-
+  padding: 1rem;
   min-height: 100vh;
   /* margin: 0 auto; */
   /* max-width: 1800px; */
@@ -58,7 +61,7 @@
   margin: 0 auto;
   max-width: 400px;
   gap: 1rem;
-  border: 1px solid red ;
+  border: 1px solid red;
 }
 
 .wrapperTitulos {
@@ -75,7 +78,8 @@
 }
 
 .titulos {
-  font-family: font-title, system-ui;
+  font-family: font-orbitron, system-ui;
+  font-weight: 700;
   font-size: 2.4rem;
   letter-spacing: .2em;
 }
@@ -101,7 +105,7 @@
 
 .titulos:hover {
   --_p: 100%;
-  transition:  0.1s ease-out 0s;
+  transition: 0.1s ease-out 0s;
 }
 
 .titulos--fast {
@@ -122,18 +126,16 @@
 }
 
 .header {
-  font-family: font-header, system-ui;
+  font-family: "Black Ops One", system-ui;
+  font-weight: 400;
   letter-spacing: -.1em;
-    font-size: clamp(4.5rem, 5.5vw, 9rem);
-
+  font-size: clamp(4.5rem, 5.5vw, 9rem);
   display: flex;
   justify-content: center;
   text-align: center;
   line-height: 0.8;
   position: relative;
-  /* Permite control de z-index */
   z-index: 10;
-  /* Un valor bajo */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -142,6 +144,7 @@
 .header:hover {
   color: red;
 }
+
 .headerImage {
   position: absolute;
   z-index: 20;
@@ -155,8 +158,6 @@
   background-position: center;
 }
 
-
-
 @media (max-width: 900px) {
   .wrapper {
     flex-direction: column;
@@ -168,7 +169,6 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    /* Asegurar que ocupe todo el ancho */
   }
 
   .header {

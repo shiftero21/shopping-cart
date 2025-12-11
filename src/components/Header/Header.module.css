@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'font-header';
-  src: url(/src/assets/fonts/Orbitron-ExtraBold.ttf);
+  font-family: "Black Ops One";
+  src: url(/src/assets/fonts/BlackOpsOne-Regular.ttf);
+  font-weight: 400;
 }
 
 .header {
@@ -82,7 +83,8 @@
 }
 
 .header__logo {
-  font-family: 'font-header', sans-serif;
+  font-family: "Black Ops One", sans-serif;
+  font-weight: 400;
   font-size: 3.5rem;
 }
 
