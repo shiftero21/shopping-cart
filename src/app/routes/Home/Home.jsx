@@ -6,7 +6,7 @@ import carg01 from "../../../assets/images/products/anker.webp";
 import carg02 from "../../../assets/images/products/anker-02.avif";
 import carg03 from "../../../assets/images/products/sharker-03.webp";
 import carg04 from "../../../assets/images/products/anker-04.webp";
-import carg05 from "../../../assets/images/products/urban.jpg";
+import carg05 from "../../../assets/images/products/carg-05/urban.jpg";
 import carg06 from "../../../assets/images/products/anker.webp";
 import carg07 from "../../../assets/images/products/shark-geek-02.jpg";
 

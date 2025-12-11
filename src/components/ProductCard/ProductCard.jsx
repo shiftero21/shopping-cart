@@ -4,7 +4,7 @@ import { useOutletContext } from "react-router-dom";
 import AddToCartBtn from "../common/AddToCartBtn";
 
 const ProductCard = ({ product }) => {
-  const { id, name, price, description, slug, src, category } = product;
+  const { id, name, price, description, slug, mainImage, category } = product;
 
   const { cart, addToCart } = useOutletContext();
   return (
@@ -15,7 +15,7 @@ const ProductCard = ({ product }) => {
           <div className={styles.wrapper__img}>
             <img
               className="transition-transform duration-300 ease-in-out hover:scale-[1.15]"
-              src={src}
+              src={mainImage}
               alt={description}
             />
           </div>

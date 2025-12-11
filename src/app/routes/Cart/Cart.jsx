@@ -61,7 +61,7 @@ function Cart() {
             {/* Imagen del producto */}
             <Link to={`/shopping/${item.slug}`}>
               <img
-                src={item.src}
+                src={item.mainImage}
                 alt={item.name}
                 className="w-16 h-16 object-cover rounded-md mr-4"
                 onError={(e) => {

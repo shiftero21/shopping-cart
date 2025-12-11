@@ -5,6 +5,7 @@ import products from "../../../utils/data/products";
 import { Link } from "react-router-dom";
 import BackIcon from "../../../components/icons/BackIcon";
 import AddToCartBtn from "../../../components/common/AddToCartBtn.jsx";
+import Carrousel from "../../../components/Carrousel/Carrousel.jsx";
 
 function ProductDetailsPage() {
   const { slug } = useParams();
@@ -24,10 +25,7 @@ function ProductDetailsPage() {
       <div className={styles.wrapper__main}>
         <h2 className={styles.wrapper__title}>{product.name}</h2>
         <div className={styles.wrapper__img}>
-          <img
-            src={product.src}
-            alt={product.name}
-          />
+          <Carrousel images={product.carouselImages} />
         </div>
         <p className={styles.wrapper__desc}>{product.description}</p>
         <div className={styles.buyDetails}>
