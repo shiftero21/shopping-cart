@@ -15,7 +15,7 @@ function ProductDetailsPage() {
     <div className={styles.wrapper}>
       <Link
         to="/shopping"
-        className="flex gap-2 items-center text-2xl text-center text-indigo-600 hover:text-indigo-800 font-medium my-2"
+        className="flex gap-2 items-center text-1xl text-center text-indigo-600 hover:text-indigo-800 font-medium my-2"
       >
         <BackIcon></BackIcon>
         Seguir Comprando
@@ -27,7 +27,6 @@ function ProductDetailsPage() {
           <img
             src={product.src}
             alt={product.name}
-            style={{ maxWidth: "300px" }}
           />
         </div>
         <p className={styles.wrapper__desc}>{product.description}</p>

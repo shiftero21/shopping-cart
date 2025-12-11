@@ -24,6 +24,7 @@
   padding: 1rem;
   font-family: font-orbitron;
   max-width: 400px;
+  margin-inline: 2rem;
 }
 
 .wrapper__img {
@@ -35,7 +36,7 @@
 .wrapper__img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .wrapper__title {
@@ -51,6 +52,7 @@
 .wrapper__desc {
    font-family: font-orbitron;
   font-weight: 400;
+  margin-block: 1rem;
 }
 .buyDetails {
   display: flex;
