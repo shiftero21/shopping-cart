@@ -1,11 +1,11 @@
-.total {
+.home {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 
 }
 
-.wrapper {
+.home__main {
   display: flex;
   padding: 1rem;
   min-height: 100vh;
@@ -42,36 +42,37 @@
 
 }
 
-.left {
+.home__features {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  max-width: 400px;
+  width: clamp(340px, 80vw, 500px);
+  width: 400px;
   gap: 1rem;
   border: 1px solid red;
 }
 
-.wrapperTitulos {
-  padding: 1rem;
+.home__wrapper-titulos  {
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* flex-wrap: wrap; */
-  min-width: 400px;
+  /* min-width: 340px; */
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
 }
 
-.titulos {
+.home__title {
   font-family: font-orbitron, system-ui;
   font-weight: 700;
   font-size: 2.4rem;
   letter-spacing: .2em;
+  width: fit-content;
 }
 
-.titulos {
+.home__title {
   --s: 0.1em;
   /* the thickness of the line */
   --c: rgb(18, 18, 18);
@@ -90,33 +91,33 @@
   transition-timing-function: ease-out;
 }
 
-.titulos:hover {
+.home__title:hover {
   --_p: 100%;
   transition: 0.1s ease-out 0s;
 }
 
-.titulos--fast {
+.home__title--fast {
   align-self: flex-start;
 }
 
-.titulos--charge {
+.home__title--charge {
   align-self: center;
 }
 
-.titulos--portab {
+.home__title--portab {
   align-self: flex-end;
 }
 
-.wrapperHeader {
+.home__product-promo {
   position: relative;
   width: 100%;
 }
 
-.header {
+.home__product-promo-content {
   font-family: "Black Ops One", system-ui;
   font-weight: 400;
   letter-spacing: -.1em;
-  font-size: clamp(4.5rem, 5.5vw, 9rem);
+  font-size: clamp(3.5rem, 9.5vw, 9rem);
   display: flex;
   justify-content: center;
   text-align: center;
@@ -128,11 +129,7 @@
   transform: translate(-50%, -50%);
 }
 
-.header:hover {
-  color: red;
-}
-
-.headerImage {
+.home__product-promo-image {
   position: absolute;
   z-index: 20;
   top: 0;
@@ -146,11 +143,13 @@
 }
 
 @media (max-width: 900px) {
-  .wrapper {
+  .home__main {
     flex-direction: column;
+    align-content: center;
+    align-items: center ;
   }
 
-  .wrapperHeader {
+  .home__product-promo {
     min-height: 400px;
     display: flex;
     align-items: center;
@@ -158,9 +157,30 @@
     width: 100%;
   }
 
-  .header {
-    font-size: 4rem;
+  .home__product-promo-content {
     width: 100%;
   }
 
+  .home__features {
+    margin: 0;
+    width: 100%;
+  }
+
+  .home__title {
+    align-self: normal;
+  }
+
+}
+
+@media (max-width: 400px) {
+  .home__main {
+    padding: 0;
+  
+
+  }
+
+  .home__features {
+    width: 100%;
+    margin: 0;
+  }
 }

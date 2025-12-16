@@ -25,44 +25,43 @@ const carrouselData2 = [
 
 const HomePage = () => {
   return (
-    <div className={styles.total}>
+    <div className={styles.home}>
       <Carrousel images={carrouselData1} />
-      <div className={styles.wrapper}>
-        <div className={styles.left}>
+      <div className={styles.home__main}>
+        <div className={styles.home__features}>
           <Carrousel
             images={carrouselData2}
             sizeClass="small-carrousel"
           />
-          <div className={styles.wrapperTitulos}>
+          <div className={styles["home__wrapper-titulos"]}>
             <div
               id="fast"
-              className={`${styles.titulos} ${styles["titulos--fast"]}`}
+              className={`${styles.home__title} ${styles["home__title--fast"]}`}
             >
               Fast
             </div>
             <div
               id="charge"
-              className={`${styles.titulos} ${styles["titulos--charge"]}`}
+              className={`${styles.home__title} ${styles["home__title--charge"]}`}
             >
               Charge
             </div>
             <div
               id="portability"
-              className={`${styles.titulos} ${styles["titulos--portab"]}`}
+              className={`${styles.home__title} ${styles["titulos--portab"]}`}
             >
               Portability!
             </div>
           </div>
         </div>
-        <div className={styles.wrapperHeader}>
-          <div className={styles.header}>
+        <div className={styles["home__product-promo"]}>
+          <div className={styles["home__product-promo-content"]}>
             {/* <Tooltip></Tooltip> */}
             <h1>POWERBANKS</h1>
           </div>
-          <div className={styles.headerImage}></div>
+          <div className={styles["home__product-promo-image"]}></div>
         </div>
       </div>
-      {/* <Carrousel></Carrousel> */}
     </div>
   );
 };
