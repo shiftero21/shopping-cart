@@ -27,7 +27,7 @@ function ProductDetailsPage() {
           <div className={styles.wrapper__img}>
             <Carrousel
               images={product.carouselImages}
-              sizeClass="small-carrousel"
+              sizeClass="hero-banner--small"
             />
           </div>
           <p className={styles.wrapper__desc}>{product.description}</p>

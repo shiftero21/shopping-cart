@@ -31,7 +31,7 @@ const HomePage = () => {
         <div className={styles.home__features}>
           <Carrousel
             images={carrouselData2}
-            sizeClass="small-carrousel"
+            sizeClass="hero-banner--small"
           />
           <div className={styles["home__wrapper-titulos"]}>
             <div

@@ -27,23 +27,27 @@ const Carrousel = ({ images, sizeClass = "" }) => {
   }, [currentImageIndex]);
 
   return (
-    <section className={sizeClass}>
-      <div className="image-container">
+    <section className={`hero-banner ${sizeClass}`}>
+      <div className="hero-banner__image-container">
         {images.map((image, index) => (
           <img
             src={image.url}
             alt="images"
-            className={currentImageIndex === index ? "block" : "hidden"}
+            className={`hero-banner__image ${
+              currentImageIndex !== index ? "hero-banner__image--hidden" : ""
+            }`}
             key={image.id}
           />
         ))}
       </div>
-      <div className="dots-container">
+      <div className="hero-banner__dots-container">
         {images.map((_, index) => (
           <button
             key={index}
-            className={`dot ${currentImageIndex === index ? "active" : ""}`}
-            onClick={() => handleDotClick(index)} // Llama a la nueva función con el índice
+            className={`hero-banner__dot ${
+              currentImageIndex === index ? "hero-banner__dot--active" : ""
+            }`}
+            onClick={() => handleDotClick(index)}
             aria-label={`Go to slide ${index + 1}`}
           ></button>
         ))}
