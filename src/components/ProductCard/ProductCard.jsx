@@ -8,23 +8,23 @@ const ProductCard = ({ product }) => {
 
   const { cart, addToCart } = useOutletContext();
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.card}>
       <h1 className="mb-2">NEW</h1>
-      <div className={styles.wrapper__main}>
+      <div className={styles.card__main}>
         <Link to={`/shopping/${slug}`}>
-          <div className={styles.wrapper__img}>
+          <div className={styles["card__wrapper-img"]}>
             <img
-              className="transition-transform duration-300 ease-in-out hover:scale-[1.15]"
+              className={`${styles.card__img} transition-transform duration-300 ease-in-out hover:scale-[1.15]`}
               src={mainImage}
               alt={description}
             />
           </div>
-          <h2 className={styles.wrapper__title}>Powerbank</h2>
+          <h2 className={styles.card__title}>Powerbank</h2>
         </Link>
-        <p className={styles.wrapper__desc}>{description}</p>
+        <p className={styles.card__desc}>{description}</p>
 
-        <div className={styles.buyDetails}>
-          <span className={styles.wrapper__price}>Price: {price}</span>
+        <div className={styles["card__buy-details"]}>
+          <span className={styles.card__price}>Price: {price}</span>
           <AddToCartBtn
             product={product}
             addToCart={addToCart}
