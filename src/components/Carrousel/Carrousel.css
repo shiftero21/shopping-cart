@@ -127,6 +127,7 @@ h2 {
 .hero-banner--small {
   height: 400px; 
   box-shadow: none;
+  max-width: 450px;
 }
 
 .hero-banner--small .hero-banner__image-container {
@@ -141,5 +142,10 @@ h2 {
 @media (max-width: 900px) { 
   section {
     max-height: 400px;
+  }
+
+  .hero-banner--small {
+    width: 100%;
+    max-width: none;
   }
 }
