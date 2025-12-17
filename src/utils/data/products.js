@@ -36,19 +36,19 @@ import c08Vertical from "../../assets/images/products/shark-transp-01/vertical.j
 import c09Flat from "../../assets/images/products/shark-transp-02/flat.jpg";
 import c09Iso from "../../assets/images/products/shark-transp-02/iso.jpg";
 
-const min = 4.99;
-const max = 24.99;
+const min = 20;
+const max = 45;
 
 const products = [
   {
     id: uniqid("prod-"),
     slug: "cargador-portatil-01",
     name: "Cargador portatil 01",
-    price: Number((Math.random() * (max - min) + min).toFixed(2)),
+    price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c01Front,
     carouselImages: [
-      { id: 1, url: c01Front },
-      { id: 2, url: c01Details },
+      { id: 1, url: c01Front, alt: "Cargador portatil 01 Front view" },
+      { id: 2, url: c01Details, alt: "Cargador portatil 01 Ports details" },
     ],
     description: "Cargador Portatil 10000 Mah Con Cable Mixio Mp-10",
     category: "tech",
@@ -57,11 +57,11 @@ const products = [
     id: uniqid("prod-"),
     slug: "cargador-portatil-02",
     name: "Cargador portatil 02",
-    price: Number((Math.random() * (max - min) + min).toFixed(2)),
+    price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c02Front,
     carouselImages: [
-      { id: 3, url: c02Front },
-      { id: 4, url: c02Details },
+      { id: 3, url: c02Front, alt: "Cargador portatil 02 Front view" },
+      { id: 4, url: c02Details, alt: "Cargador portatil 02 Port Details" },
     ],
     description: "Cargador Portatil 20000 Mah Con Cable Mixio Mp-10",
     category: "tech",
@@ -70,11 +70,11 @@ const products = [
     id: uniqid("prod-"),
     slug: "cargador-portatil-03",
     name: "Cargador portatil 03",
-    price: Number((Math.random() * (max - min) + min).toFixed(2)),
+    price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c03Front,
     carouselImages: [
-      { id: 5, url: c03Front },
-      { id: 6, url: c03Flat },
+      { id: 5, url: c03Front, alt: "Cargador portatil 03 Front view" },
+      { id: 6, url: c03Flat, alt: "Cargador portatil 03 Horizontal view" },
     ],
     description: "Cargador Portatil 4000 Mah Con Cable Mixio Mp-10",
     category: "tech",
@@ -84,11 +84,15 @@ const products = [
     id: uniqid("prod-"),
     slug: "cargador-portatil-04",
     name: "Cargador portatil 04",
-    price: Number((Math.random() * (max - min) + min).toFixed(2)),
+    price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c04Flat,
     carouselImages: [
-      { id: 7, url: c04Flat },
-      { id: 8, url: c04Details },
+      { id: 7, url: c04Flat, alt: "Cargador portatil 04 Front view" },
+      {
+        id: 8,
+        url: c04Details,
+        alt: "Cargador portatil 04 Porcentages charge",
+      },
     ],
     description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
@@ -98,14 +102,26 @@ const products = [
     id: uniqid("prod-"),
     slug: "cargador-portatil-05",
     name: "Cargador portatil 05",
-    price: Number((Math.random() * (max - min) + min).toFixed(2)),
+    price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c05Main,
     carouselImages: [
-      { id: 9, url: c05Main },
-      { id: 10, url: c05Details },
-      { id: 11, url: c05Urban },
-      { id: 12, url: c05Phone },
-      { id: 13, url: c05Flat },
+      { id: 9, url: c05Main, alt: "Cargador portatil 05 Front view" },
+      {
+        id: 10,
+        url: c05Details,
+        alt: "Cargador portatil 05 Back view details",
+      },
+      {
+        id: 11,
+        url: c05Urban,
+        alt: "Urban lifestyle photo of Cargador portatil 05 in use",
+      },
+      { id: 12, url: c05Phone, alt: "Cargador portatil 05 charging phone" },
+      {
+        id: 13,
+        url: c05Flat,
+        alt: "Cargador portatil 05 details uses in plain",
+      },
     ],
     description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
@@ -115,7 +131,7 @@ const products = [
     id: uniqid("prod-"),
     slug: "cargador-portatil-06",
     name: "Cargador portatil 06",
-    price: Number((Math.random() * (max - min) + min).toFixed(2)),
+    price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c06Base,
     carouselImages: [
       { id: 14, url: c06Base },
@@ -130,7 +146,7 @@ const products = [
     id: uniqid("prod-"),
     slug: "cargador-portatil-07",
     name: "Cargador portatil 07",
-    price: Number((Math.random() * (max - min) + min).toFixed(2)),
+    price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c07Main,
     carouselImages: [
       { id: 17, url: c07Main },
@@ -144,7 +160,7 @@ const products = [
     id: uniqid("prod-"),
     slug: "cargador-portatil-08",
     name: "Cargador portatil 08",
-    price: Number((Math.random() * (max - min) + min).toFixed(2)),
+    price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c08Front,
     carouselImages: [
       { id: 19, url: c08Front },
@@ -163,7 +179,7 @@ const products = [
     id: uniqid("prod-"),
     slug: "cargador-portatil-09",
     name: "Cargador portatil 09",
-    price: Number((Math.random() * (max - min) + min).toFixed(2)),
+    price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c09Flat,
     carouselImages: [
       { id: 26, url: c09Flat },
