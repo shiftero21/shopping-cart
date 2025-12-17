@@ -6,7 +6,7 @@ const Shop = () => {
   console.log(products);
 
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.products}>
       {products.map((product) => (
         <ProductCard
           key={product.id}
