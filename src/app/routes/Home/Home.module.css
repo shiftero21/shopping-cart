@@ -2,7 +2,7 @@
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-
+  overflow-x: clip;
 }
 
 .home__main {
@@ -50,6 +50,7 @@
   width: 400px;
   gap: 1rem;
   border: 1px solid red;
+  view-timeline-name: --features;
 }
 
 .home__wrapper-titulos  {
@@ -70,7 +71,25 @@
   font-size: 2.4rem;
   letter-spacing: .2em;
   width: fit-content;
+  animation-name: reveal-left;
+  animation-timeline: --features;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-range: entry-crossing 50% exit 20%;
+
 }
+
+  @keyframes reveal-left {
+    from {
+      opacity: 0;
+      transform: translateX(-100%) skewX(20deg);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateX(0) skewX(0deg);
+    }
+  }
 
 .home__title {
   --s: 0.1em;
