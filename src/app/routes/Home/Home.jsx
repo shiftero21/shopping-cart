@@ -1,6 +1,7 @@
 import Tooltip from "../../../components/Tooltip/Tooltip";
 import styles from "./Home.module.css";
 import Carrousel from "../../../components/Carrousel/Carrousel";
+import ScrollRevealHero from "./ScrollRevealHero";
 
 import carg01 from "../../../assets/images/products/anker.webp";
 import carg02 from "../../../assets/images/products/anker-02.avif";
@@ -27,6 +28,7 @@ const HomePage = () => {
   return (
     <div className={styles.home}>
       <Carrousel images={carrouselData1} />
+      <ScrollRevealHero></ScrollRevealHero>
       <div className={styles.home__main}>
         <div className={styles.home__features}>
           <Carrousel

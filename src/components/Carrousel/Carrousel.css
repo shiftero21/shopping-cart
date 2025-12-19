@@ -13,11 +13,11 @@ section {
     0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
-h2 {
+/* h2 {
   font-size: 2rem;
   color: #1f2937;
   margin-bottom: 1.5rem;
-}
+} */
 
 .hero-banner__image-container {
   position: relative;
