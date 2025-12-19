@@ -9,7 +9,7 @@
     0 8px 20px rgba(0, 0, 0, 0.15);
   /* sombra externa para realismo */
   padding: 1rem;
-  font-family: font-orbitron, sans-serif;;
+  font-family: font-orbitron, sans-serif;
   margin-inline: 2rem;
 }
 
@@ -22,7 +22,7 @@
     inset 0 -4px 8px rgba(0, 0, 0, 0.05),
     0 8px 20px rgba(0, 0, 0, 0.15);
   padding: 1rem;
-  font-family: font-orbitron, sans-serif;;
+  font-family: font-orbitron, sans-serif;
   justify-content: space-between;
   gap: 1.2rem;
 }
@@ -41,7 +41,7 @@
 .wrapper__title {
   font-size: clamp(1.2rem, 4.5vw, 1.5rem);
   margin-bottom: 0.6rem;
-  font-family: font-orbitron, sans-serif;;
+  font-family: font-orbitron, sans-serif;
   font-weight: 700;
   opacity: 1;
   transition: opacity 0.3s ease-in-out;
@@ -49,7 +49,7 @@
 
 
 .wrapper__desc {
-  font-family: font-orbitron, sans-serif;;
+  font-family: font-orbitron, sans-serif;
   font-weight: 400;
   margin-block: 1rem;
 }

@@ -3,11 +3,7 @@ import { Link } from "react-router-dom";
 import BackIcon from "../../../components/icons/BackIcon";
 
 function Cart() {
-  // 1. Obtener el contexto. Es crucial que useOutletContext() devuelva un objeto
-  // que tenga la propiedad 'cart'.
   const context = useOutletContext();
-
-  // Usar un valor por defecto seguro en caso de que el contexto esté incompleto
   const cart = context?.cart || [];
 
   if (cart.length === 0) {
