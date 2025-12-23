@@ -2,6 +2,7 @@ import Tooltip from "../../../components/Tooltip/Tooltip";
 import styles from "./Home.module.css";
 import Carrousel from "../../../components/Carrousel/Carrousel";
 import ScrollRevealHero from "./ScrollRevealHero";
+import ScrollRevealText from "./ScrollRevealText";
 
 import carg01 from "../../../assets/images/products/anker.webp";
 import carg02 from "../../../assets/images/products/anker-02.avif";
@@ -64,6 +65,7 @@ const HomePage = () => {
           <div className={styles["home__product-promo-image"]}></div>
         </div>
       </div>
+      <ScrollRevealText></ScrollRevealText>
     </div>
   );
 };

@@ -1,0 +1,43 @@
+.review {
+  border: 1px solid red;
+  max-width: 700px;
+  /* height: 100vh; */
+  padding-block: clamp(4rem, 15vh, 8rem);
+  margin: 0 auto;
+  font-family: font-orbitron, system-ui;
+  font-weight: 400;
+  /* view-timeline-name: --review; */
+}
+
+.review__title {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  line-height: 1;
+  align-self: flex-start;
+}
+
+.review p {
+  text-align: start;
+  max-width: 65ch;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+}
+
+.review__cita {
+  margin: 0;
+  color: hsla(0, 0%, 5%, 0.2);
+  background-clip: text;
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(90deg, rgb(53, 28, 53), rgb(46, 30, 44));
+  animation: scroll-reveal linear forwards;
+  animation-timeline: view();
+  animation-range-start: cover 20vh;
+  animation-range-end: cover 50vh;
+}
+
+@keyframes scroll-reveal {
+  to {
+    background-size: 100% 100%;
+  }
+}
