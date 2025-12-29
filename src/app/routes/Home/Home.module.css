@@ -7,10 +7,8 @@
 
 .home__main {
   display: flex;
-  padding: 1rem;
-  /* min-height: 100vh; */
-  /* margin: 0 auto; */
-  /* max-width: 1800px; */
+  padding-inline: 1rem;
+  padding-block: 5rem;
   background-image:
     linear-gradient(to bottom,
       #ffffff 0%,
@@ -73,9 +71,9 @@
   width: fit-content;
   animation-name: reveal-left;
   animation-timeline: --features;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
   animation-timing-function: linear;
-  animation-range: entry-crossing 30% exit 10%;
+  animation-range: entry-crossing 10% exit 10%;
 
 }
 
@@ -201,7 +199,7 @@
 
 @media (max-width: 400px) {
   .home__main {
-    padding: 0;
+    padding-inline: 0;
 
 
   }
