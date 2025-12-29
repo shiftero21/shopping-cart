@@ -11,6 +11,9 @@
   padding: 1rem;
   font-family: font-orbitron, sans-serif;
   margin-inline: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .wrapper__main {
@@ -35,7 +38,6 @@
 
 .wrapper__img {
   overflow: hidden;
-  border: 1px solid black;
 }
 
 .wrapper__title {
@@ -101,6 +103,9 @@
 
 .wrapper__sidebarDetails li:not(:last-child) {
     border-bottom: 1px dashed #eee;
+}
+
+.reviewsSection {
 }
 
 @media (max-width: 900px) { 

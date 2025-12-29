@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import BackIcon from "../../../components/icons/BackIcon";
 import AddToCartBtn from "../../../components/common/AddToCartBtn.jsx";
 import Carrousel from "../../../components/Carrousel/Carrousel.jsx";
+import Review from "../Home/Review.jsx";
+import Avatar from "../Home/Avatar.jsx";
 
 function ProductDetailsPage() {
   const { slug } = useParams();
@@ -69,6 +71,22 @@ function ProductDetailsPage() {
           </ul>
         </aside>
       </div>
+      <section className={styles.reviewsSection}>
+        {product.reviews.map((rev, index) => (
+          <Review
+            key={`${product.id}-rev-${index}`}
+            name={rev.name}
+            text={rev.text}
+            starCount={rev.starCount}
+            date={rev.date}
+          >
+            {/* <Avatar
+                  src={product.mainImage}
+                  alt={rev.name}
+                /> */}
+          </Review>
+        ))}
+      </section>
     </div>
   );
 }
