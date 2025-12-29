@@ -2,7 +2,9 @@ import Tooltip from "../../../components/Tooltip/Tooltip";
 import styles from "./Home.module.css";
 import Carrousel from "../../../components/Carrousel/Carrousel";
 import ScrollRevealHero from "./ScrollRevealHero";
-import ScrollRevealText from "./ScrollRevealText";
+import Review from "./Review";
+import Avatar from "./Avatar";
+import products from "../../../utils/data/products";
 
 import carg01 from "../../../assets/images/products/anker.webp";
 import carg02 from "../../../assets/images/products/anker-02.avif";
@@ -26,6 +28,14 @@ const carrouselData2 = [
 ];
 
 const HomePage = () => {
+  const featuredReviews = products.flatMap((product) =>
+    product.reviews.map((rev) => ({
+      ...rev,
+      productImg: product.mainImage, // Usamos la imagen del producto como avatar
+      productId: product.id,
+    }))
+  );
+
   return (
     <div className={styles.home}>
       <Carrousel images={carrouselData1} />
@@ -65,7 +75,22 @@ const HomePage = () => {
           <div className={styles["home__product-promo-image"]}></div>
         </div>
       </div>
-      <ScrollRevealText></ScrollRevealText>
+      <div className={styles.home__reviews_container}>
+        {featuredReviews.map((review, index) => (
+          <Review
+            key={`${review.productId}-${index}`}
+            name={review.name}
+            text={review.text}
+            starCount={review.starCount}
+            date={review.date}
+          >
+            <Avatar
+              src={review.productImg}
+              alt={`Review by ${review.name}`}
+            />
+          </Review>
+        ))}
+      </div>
     </div>
   );
 };
