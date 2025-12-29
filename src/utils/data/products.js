@@ -52,6 +52,20 @@ const products = [
     ],
     description: "Cargador Portatil 10000 Mah Con Cable Mixio Mp-10",
     category: "tech",
+    reviews: [
+      {
+        name: "John Miller",
+        text: "Solid build quality. The 10000 mAh capacity is spot on, charges my iPhone 15 Pro about twice. The built-in cable is a lifesaver.",
+        starCount: 5,
+        date: "Dec 12, 2025",
+      },
+      {
+        name: "Sarah Jenkins",
+        text: "A bit bulkier than I imagined, but it performs well. Fast charging works perfectly with my Samsung.",
+        starCount: 4,
+        date: "Dec 08, 2025",
+      },
+    ],
   },
   {
     id: uniqid("prod-"),
@@ -65,6 +79,14 @@ const products = [
     ],
     description: "Cargador Portatil 20000 Mah Con Cable Mixio Mp-10",
     category: "tech",
+    reviews: [
+      {
+        name: "Michael R.",
+        text: "Massive capacity! Perfect for long flights or camping trips. I managed to keep my tablet and phone alive for three days.",
+        starCount: 5,
+        date: "Nov 30, 2025",
+      },
+    ],
   },
   {
     id: uniqid("prod-"),
@@ -78,6 +100,14 @@ const products = [
     ],
     description: "Cargador Portatil 4000 Mah Con Cable Mixio Mp-10",
     category: "tech",
+    reviews: [
+      {
+        name: "Emily Watson",
+        text: "Super slim and light. It's not for heavy use, but it's the best pocket-sized backup for emergencies.",
+        starCount: 4,
+        date: "Dec 22, 2025",
+      },
+    ],
   },
 
   {
@@ -96,6 +126,14 @@ const products = [
     ],
     description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
+    reviews: [
+      {
+        name: "Kevin Taylor",
+        text: "The LED display is very accurate. It’s great knowing exactly how much juice is left instead of just guessing with four tiny dots.",
+        starCount: 5,
+        date: "Dec 01, 2025",
+      },
+    ],
   },
 
   {
@@ -125,6 +163,14 @@ const products = [
     ],
     description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
+    reviews: [
+      {
+        name: "Jessica B.",
+        text: "I take this everywhere. The urban design looks premium and it fits perfectly in my bag's side pocket. Great everyday carry.",
+        starCount: 5,
+        date: "Nov 25, 2025",
+      },
+    ],
   },
 
   {
@@ -140,6 +186,14 @@ const products = [
     ],
     description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
+    reviews: [
+      {
+        name: "Mark Stevens",
+        text: "Reliable and simple. It doesn't overheat even when charging at full speed. Best value for the money so far.",
+        starCount: 4,
+        date: "Nov 15, 2025",
+      },
+    ],
   },
 
   {
@@ -154,6 +208,14 @@ const products = [
     ],
     description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
+    reviews: [
+      {
+        name: "Ryan G.",
+        text: "Standard power bank. Does what it says on the box. The matte finish is nice because it doesn't show fingerprints.",
+        starCount: 4,
+        date: "Oct 20, 2025",
+      },
+    ],
   },
 
   {
@@ -173,6 +235,14 @@ const products = [
     ],
     description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
+    reviews: [
+      {
+        name: "David K.",
+        text: "The transparent aesthetic is stunning. Beyond the looks, the PD charging is fast enough for my MacBook Air. Highly recommended.",
+        starCount: 5,
+        date: "Dec 15, 2025",
+      },
+    ],
   },
 
   {
@@ -187,6 +257,14 @@ const products = [
     ],
     description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
+    reviews: [
+      {
+        name: "Alice Cooper",
+        text: "The build is very sturdy. I've dropped it once and it still works perfectly. Excellent port selection for different cables.",
+        starCount: 5,
+        date: "Oct 05, 2025",
+      },
+    ],
   },
 ];
 
