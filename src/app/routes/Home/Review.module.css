@@ -1,11 +1,9 @@
 .review {
   border: 1px solid black;
   border-radius: 1rem;
-  position: static;
-  align-items: stretch;
   padding: clamp(1rem, 4vh, 8rem);
     /* margin: 0 auto; */
-  height: 60vh;
+  min-height: 350px;
   font-family: font-orbitron, system-ui;
   font-weight: 400;
   flex-direction: column;
@@ -46,9 +44,6 @@
 .review__meta {
   display: flex;
   gap: 12px;
-  justify-content: center;
-  align-items: center;
-  align-self: flex-start;
 }
 
 @keyframes scroll-reveal {

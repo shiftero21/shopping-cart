@@ -75,7 +75,7 @@
   animation-timeline: --features;
   animation-fill-mode: both;
   animation-timing-function: linear;
-  animation-range: entry-crossing 50% exit 20%;
+  animation-range: entry-crossing 30% exit 10%;
 
 }
 

@@ -139,10 +139,6 @@
 }
 
 @media (max-width: 900px) { 
-  section {
-    height: 65vh;
-  }
-
   .hero-banner--small {
     width: 100%;
     max-width: none;
