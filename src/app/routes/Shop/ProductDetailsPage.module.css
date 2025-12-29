@@ -34,7 +34,7 @@
 .wrapper__mainContent {
   display: flex;
   flex-direction: column;
-  min-width: 450px; 
+  min-width: 450px;
 }
 
 .wrapper__img {
@@ -56,6 +56,7 @@
   font-weight: 400;
   margin-block: 1rem;
 }
+
 .buyDetails {
   display: flex;
   font-size: 12px;
@@ -71,57 +72,63 @@
 }
 
 .wrapper__sidebarDetails {
-    background-color: #f8f8f8;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    padding-inline: 20px;
-    width: 100%;
-    font-family: sans-serif;
-    color: #333;
+  background-color: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding-inline: 20px;
+  width: 100%;
+  font-family: sans-serif;
+  color: #333;
 }
 
 .wrapper__sidebarDetails h3 {
-    color: #4a4a4a;
-    font-size: 1.25rem;
-    border-bottom: 1px solid #000000;
+  color: #4a4a4a;
+  font-size: 1.25rem;
+  border-bottom: 1px solid #000000;
 
 }
 
 .wrapper__sidebarDetails ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .wrapper__sidebarDetails li {
-    margin-bottom: 10px;
-    padding: 8px 0;
-    font-size: 1rem;
-    line-height: 1.4;
-    display: flex;
-    align-items: center;
+  margin-bottom: 10px;
+  padding: 8px 0;
+  font-size: 1rem;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
 }
 
 .wrapper__sidebarDetails li:not(:last-child) {
-    border-bottom: 1px dashed #eee;
+  border-bottom: 1px dashed #eee;
 }
 
 .reviewsSection {
+  display: flex;
+  gap: 1rem;
 }
 
-@media (max-width: 900px) { 
+@media (max-width: 900px) {
   .wrapper {
     margin: 0 auto;
     margin-inline: 10px;
   }
+
   .wrapper__main {
     flex-direction: column;
   }
 
   .wrapper__mainContent {
     min-width: 280px;
-    }
-  
+  }
+
+  .reviewsSection {
+    flex-direction: column;
+  }
 
 
 }

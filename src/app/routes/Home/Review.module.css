@@ -4,6 +4,7 @@
   padding: clamp(1rem, 4vh, 8rem);
     /* margin: 0 auto; */
   min-height: 350px;
+  width: 100%;
   font-family: font-orbitron, system-ui;
   font-weight: 400;
   flex-direction: column;
