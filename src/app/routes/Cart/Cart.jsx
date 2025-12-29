@@ -8,7 +8,7 @@ function Cart() {
 
   if (cart.length === 0) {
     return (
-      <div className="flex flex-col items-center justify-center p-8 min-h-[60vh] bg-gray-50">
+      <div className="flex flex-col items-center justify-center p-8 min-h-[80vh] bg-gray-50">
         <Link
           to="/shopping"
           className="flex gap-2 items-center text-2xl text-center text-indigo-600 hover:text-indigo-800 font-medium my-2"
