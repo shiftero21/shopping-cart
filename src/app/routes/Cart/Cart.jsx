@@ -1,10 +1,12 @@
 import { useOutletContext } from "react-router-dom";
 import { Link } from "react-router-dom";
 import BackIcon from "../../../components/icons/BackIcon";
-
+import QuantitySelector from "./QuantitySelector";
 function Cart() {
   const context = useOutletContext();
   const cart = context?.cart || [];
+
+  const { addToCart, removeFromCart } = useOutletContext();
 
   if (cart.length === 0) {
     return (
@@ -82,6 +84,12 @@ function Cart() {
                   {item.cantidad}
                 </span>
               </p>
+              <QuantitySelector
+                quantity={item.cantidad}
+                onAdd={() => addToCart(item)}
+                onRemove={() => removeFromCart(item.id)}
+              />
+
               <p className="text-lg font-bold text-gray-900">
                 ${(item.price * item.cantidad).toFixed(2)}
               </p>

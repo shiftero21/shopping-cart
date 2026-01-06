@@ -35,6 +35,28 @@ function App() {
     }
   };
 
+  const removeFromCart = (productId) => {
+    const itemIndex = cart.findIndex((item) => item.id === productId);
+
+    if (itemIndex >= 0) {
+      const currentItem = cart[itemIndex];
+
+      if (currentItem.cantidad > 1) {
+        const updatedItem = {
+          ...currentItem,
+          cantidad: currentItem.cantidad - 1,
+        };
+
+        const updatedCart = [...cart];
+        updatedCart[itemIndex] = updatedItem;
+        setCart(updatedCart);
+      } else {
+        const filteredCart = cart.filter((item) => item.id !== productId);
+        setCart(filteredCart);
+      }
+    }
+  };
+
   const scrollDirection = useScrollDirection();
   const navBarClass =
     scrollDirection === "down" ? "navbar--hidden" : "navbar--visible";
@@ -46,7 +68,7 @@ function App() {
         totalItems={totalItems}
       ></NavigationBar>
       <Header></Header>
-      <Outlet context={{ cart, addToCart }}></Outlet>
+      <Outlet context={{ cart, addToCart, removeFromCart }}></Outlet>
       <Footer></Footer>
     </div>
   );
