@@ -10,9 +10,6 @@ const QuantitySelector = ({ quantity, onAdd, onRemove }) => {
       >
         <RemoveIcon />
       </button>
-
-      <span>{quantity}</span>
-
       <button onClick={onAdd}>
         <AddICon />
       </button>
