@@ -2,9 +2,10 @@ import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import EnergyIcon from "../icons/EnergyIcon";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 function NavigationBar({ navBarClass, totalItems }) {
-  // Define la clase de estilo activo para el NavLink
+  const { t } = useTranslation();
   const activeStyle = ({ isActive }) =>
     isActive ? "nav-link active" : "nav-link";
 
@@ -28,21 +29,19 @@ function NavigationBar({ navBarClass, totalItems }) {
           to="/"
           className={activeStyle}
         >
-          Home
+          {t("common.nav.home")}
         </NavLink>
         <NavLink
           to="/shopping"
           className={activeStyle}
         >
-          Tienda
+          {t("common.nav.shop")}
         </NavLink>
         <NavLink
           to="/cart"
           className={activeStyle}
         >
           <span className="text-xl">🛒</span>
-
-          {/* Renderiza el contador si hay ítems */}
           {totalItems > 0 && (
             <span
               className={`

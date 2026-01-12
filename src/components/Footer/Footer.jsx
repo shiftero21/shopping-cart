@@ -1,11 +1,16 @@
 import styles from "./Footer.module.css";
+import { useTranslation } from "react-i18next";
+
 export default function Footer({ currentColor = "white" }) {
+  const { t } = useTranslation();
   return (
     <footer className={styles.footer}>
       <div className={styles.footer__container}>
         <div className={styles.footer__layout}>
           <nav className={styles.footer__serviceNav}>
-            <h3 className={styles.footer__sectionTitle}>Services</h3>
+            <h3 className={styles.footer__sectionTitle}>
+              {t("footer.services")}
+            </h3>
             <ul className={styles.footer__linkList}>
               <li className={styles.footer__linkItem}>
                 <a
@@ -34,7 +39,7 @@ export default function Footer({ currentColor = "white" }) {
             </ul>
           </nav>
           <nav className={styles.footer__aboutNav}>
-            <h3 className={styles.footer__sectionTitle}>About</h3>
+            <h3 className={styles.footer__sectionTitle}>{t("footer.about")}</h3>
             <ul className={styles.footer__linkList}>
               <li className={styles.footer__linkItem}>
                 <a

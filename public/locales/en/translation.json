@@ -1,9 +1,24 @@
 {
+    "common": {
+    "nav": {
+      "home": "Home",
+      "shop": "Shop"
+    },
+    "buttons": {
+      "add": "Add to cart",
+      "buy": "Buy now"
+    }
+  },
   "home": {
     "titles": {
       "fast": "Fast",
       "charge": "Charge",
       "portability": "Portability!"
     }
+  },
+    "footer": {
+    "services": "Services",
+    "about": "About",
+    "team": "Team"
   }
 }

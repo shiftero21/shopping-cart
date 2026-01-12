@@ -1,9 +1,24 @@
 {
+  "common": {
+    "nav": {
+      "home": "Inicio",
+      "shop": "Tienda"
+    },
+    "buttons": {
+      "add": "Agregar al carrito",
+      "buy": "Comprar ahora"
+    }
+  },
   "home": {
     "titles": {
       "fast": "Rápido",
       "charge": "Carga",
       "portability": "Portabilidad!"
     }
+  },
+  "footer": {
+    "services": "Servicios",
+    "about": "Acerca de",
+    "team": "Equipo"
   }
 }
