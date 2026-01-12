@@ -5,6 +5,7 @@ import "./reset.css";
 import App from "./app/App";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import routes from "./app/router";
+import { Suspense } from "react";
 import i18n from "./i18next";
 
 const router = createBrowserRouter(routes);

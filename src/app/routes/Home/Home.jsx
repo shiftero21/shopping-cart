@@ -5,6 +5,7 @@ import ScrollRevealHero from "./ScrollRevealHero";
 import Review from "./Review";
 import Avatar from "./Avatar";
 import products from "../../../utils/data/products";
+import { useTranslation } from "react-i18next";
 
 import carg01 from "../../../assets/images/products/anker.webp";
 import carg02 from "../../../assets/images/products/anker-02.avif";
@@ -28,6 +29,7 @@ const carrouselData2 = [
 ];
 
 const HomePage = () => {
+  const { t } = useTranslation();
   const featuredReviews = products.flatMap((product) =>
     product.reviews.map((rev) => ({
       ...rev,
@@ -51,19 +53,19 @@ const HomePage = () => {
               id="fast"
               className={`${styles.home__title} ${styles["home__title--fast"]}`}
             >
-              Fast
+              {t("home.titles.fast")}
             </div>
             <div
               id="charge"
               className={`${styles.home__title} ${styles["home__title--charge"]}`}
             >
-              Charge
+              {t("home.titles.charge")}
             </div>
             <div
               id="portability"
               className={`${styles.home__title} ${styles["titulos--portab"]}`}
             >
-              Portability!
+              {t("home.titles.portability")}
             </div>
           </div>
         </div>
