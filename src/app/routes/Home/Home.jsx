@@ -31,7 +31,7 @@ const HomePage = () => {
   const featuredReviews = products.flatMap((product) =>
     product.reviews.map((rev) => ({
       ...rev,
-      productImg: product.mainImage, // Usamos la imagen del producto como avatar
+      productImg: product.mainImage,
       productId: product.id,
     }))
   );
