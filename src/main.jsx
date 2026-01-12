@@ -5,11 +5,14 @@ import "./reset.css";
 import App from "./app/App";
 import { createBrowserRouter, RouterProvider } from "react-router";
 import routes from "./app/router";
+import i18n from "./i18next";
 
 const router = createBrowserRouter(routes);
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <Suspense fallback={<div>Loading language...</div>}>
+      <RouterProvider router={router}></RouterProvider>
+    </Suspense>
   </StrictMode>
 );
