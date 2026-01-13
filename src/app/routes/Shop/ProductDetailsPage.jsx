@@ -46,7 +46,7 @@ function ProductDetailsPage() {
               <AddToCartBtn
                 product={product}
                 addToCart={addToCart}
-                className="w-50 py-2 px-2 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-indigo-300"
+                className="w-50 py-2 px-2 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:bg-indigo-700 transition duration-300 transform focus:outline-none focus:ring-4 focus:ring-indigo-300"
               >
                 {t("common.buttons.buy")}
               </AddToCartBtn>
