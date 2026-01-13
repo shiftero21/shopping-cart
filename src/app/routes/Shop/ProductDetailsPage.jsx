@@ -34,11 +34,13 @@ function ProductDetailsPage() {
               sizeClass="hero-banner--small"
             />
           </div>
-          <p className={styles.wrapper__desc}>{product.description}</p>
+          <p className={styles.wrapper__desc}>
+            {t(`products.${product.slug}.description`)}
+          </p>
           <div className={styles.buyDetails}>
             {/* <span>{product.category}</span> */}
             <span className={styles.wrapper__price}>
-              Price: {product.price}
+              {t("productDetails.price")}: {product.price}
             </span>
             <Link to="/cart">
               <AddToCartBtn
@@ -65,7 +67,7 @@ function ProductDetailsPage() {
           <Review
             key={`${product.id}-rev-${index}`}
             name={rev.name}
-            text={rev.text}
+            text={t(`products.${product.slug}.reviews.${index}`)}
             starCount={rev.starCount}
             date={rev.date}
           >
