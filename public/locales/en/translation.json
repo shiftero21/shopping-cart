@@ -26,7 +26,8 @@
   "productCard": {
     "new": "NEW",
     "price": "Price",
-    "textAdd": "Add to cart"
+    "textAdd": "Add to cart",
+    "added": "Added"
   },
   "productDetails": {
     "price": "Price",
