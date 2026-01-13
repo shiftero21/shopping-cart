@@ -2,11 +2,15 @@ import { useOutletContext } from "react-router-dom";
 import { Link } from "react-router-dom";
 import BackIcon from "../../../components/icons/BackIcon";
 import QuantitySelector from "./QuantitySelector";
+import { useTranslation } from "react-i18next";
+
 function Cart() {
   const context = useOutletContext();
   const cart = context?.cart || [];
 
   const { addToCart, removeFromCart } = useOutletContext();
+
+  const { t } = useTranslation();
 
   if (cart.length === 0) {
     return (
@@ -16,21 +20,17 @@ function Cart() {
           className="flex gap-2 items-center text-2xl text-center text-indigo-600 hover:text-indigo-800 font-medium my-2"
         >
           <BackIcon></BackIcon>
-          <p>Seguir Comprando</p>
+          {t("common.buttons.backIcon")}
         </Link>
         <h1 className="text-3xl font-bold text-gray-700 mb-4">
-          Tu carrito está vacío 😔
+          {t("cart.status")}😔
         </h1>
-        <p className="text-gray-500">
-          Añade algunos productos desde la sección de compras.
-        </p>
+        <p className="text-gray-500">{t("cart.text")}</p>
       </div>
     );
   }
 
-  // 2. Cálculo Total Robusto (Previene Errores de NaN)
   const totalAmount = cart.reduce((sum, item) => {
-    // Asegurar que price y cantidad sean números o 0 para evitar fallos de cálculo
     const price = parseFloat(item.price) || 0;
     const quantity = item.cantidad || 0;
 
@@ -38,16 +38,16 @@ function Cart() {
   }, 0);
 
   return (
-    <div className="max-w-4xl mx-auto p-4 sm:p-8 bg-white shadow-lg rounded-xl my-10">
+    <div className="flex flex-col max-w-4xl mx-auto p-4 sm:p-8 bg-white shadow-lg rounded-xl my-10">
       <Link
         to="/shopping"
         className="flex gap-2 items-center text-2xl text-center text-indigo-600 hover:text-indigo-800 font-medium my-2"
       >
         <BackIcon></BackIcon>
-        Seguir Comprando
+        {t("common.buttons.backIcon")}
       </Link>
       <h2 className="text-4xl font-extrabold text-indigo-700 mb-8 border-b pb-3">
-        Cesta de Compras
+        {t("cart.title")}
       </h2>
 
       <div className="space-y-6">
@@ -99,14 +99,14 @@ function Cart() {
       </div>
 
       <div className="mt-10 pt-5 border-t-4 border-indigo-200 flex justify-between items-center">
-        <h3 className="text-2xl font-bold text-gray-800">Total a Pagar:</h3>
+        <h3 className="text-2xl font-bold text-gray-800">Subtotal:</h3>
         <span className="text-3xl font-extrabold text-indigo-800">
           ${totalAmount.toFixed(2)}
         </span>
       </div>
 
-      <button className="mt-6 w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition duration-150">
-        Proceder al Pago
+      <button className="min-w-[180px] mt-3 py-3 px-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition duration-150 self-end">
+        {t("cart.payment")}
       </button>
     </div>
   );

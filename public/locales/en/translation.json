@@ -6,7 +6,8 @@
     },
     "buttons": {
       "add": "Add to cart",
-      "buy": "Buy now"
+      "buy": "Buy now",
+      "backIcon": "Back to Shop"
     }
   },
   "home": {
@@ -27,12 +28,17 @@
     "textAdd": "Add to cart"
   },
   "productDetails": {
-    "backIcon": "Back to Shop",
     "sidebar": {
       "title": "Additional Details",
       "shipping": "Free shipping within 48 hours",
       "returns": "30-day return policy",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis neque vitae mi maximus pharetra..."
     }
+  },
+  "cart": {
+    "status": "Your cart is empty",
+    "text": "Add some products from the shopping section.",
+    "title": "Shopping Cart",
+    "payment": "Continue to payment"
   }
 }

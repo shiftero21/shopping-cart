@@ -6,7 +6,8 @@
     },
     "buttons": {
       "add": "Agregar al carrito",
-      "buy": "Comprar ahora"
+      "buy": "Comprar ahora",
+      "backIcon": "Seguir Comprando"
     }
   },
   "home": {
@@ -27,12 +28,17 @@
     "textAdd": "Agregar al carrito"
   },
   "productDetails": {
-    "backIcon": "Seguir Comprando",
     "sidebar": {
       "title": "Detalles Adicionales",
       "shipping": "Envío gratuito en 48 horas",
       "returns": "Política de devolución de 30 días",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis neque vitae mi maximus pharetra..."
     }
+  },
+  "cart": {
+    "status": "Tu carrito esta vacio",
+    "text": "Añade algunos productos desde la sección de compras.",
+    "title": "Carrito de compras",
+    "payment": "Proceder al pago"
   }
 }

@@ -25,7 +25,7 @@ function ProductDetailsPage() {
             className="flex gap-2 items-center text-1xl text-center text-indigo-600 hover:text-indigo-800 font-medium my-2"
           >
             <BackIcon></BackIcon>
-            {t("productDetails.backIcon")}
+            {t("common.buttons.backIcon")}
           </Link>
           <h2 className={styles.wrapper__title}>{product.name}</h2>
           <div className={styles.wrapper__img}>
