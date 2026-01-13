@@ -3,6 +3,7 @@ import "./NavBar.css";
 import EnergyIcon from "../icons/EnergyIcon";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector";
 
 function NavigationBar({ navBarClass, totalItems }) {
   const { t } = useTranslation();
@@ -60,6 +61,7 @@ function NavigationBar({ navBarClass, totalItems }) {
           )}
         </NavLink>
       </div>
+      <LanguageSelector></LanguageSelector>
     </nav>
   );
 }

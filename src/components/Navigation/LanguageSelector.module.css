@@ -1,0 +1,16 @@
+.langButton {
+  color: white;
+  background: transparent;
+  border: 1px solid currentColor;
+  padding: 4px 8px;
+  width: 45px;
+  height: 35px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.langButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
