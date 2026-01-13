@@ -8,11 +8,13 @@ import AddToCartBtn from "../../../components/common/AddToCartBtn.jsx";
 import Carrousel from "../../../components/Carrousel/Carrousel.jsx";
 import Review from "../Home/Review.jsx";
 import Avatar from "../Home/Avatar.jsx";
+import { useTranslation } from "react-i18next";
 
 function ProductDetailsPage() {
   const { slug } = useParams();
   const product = products.find((p) => p.slug === slug);
   const { addToCart } = useOutletContext();
+  const { t } = useTranslation();
 
   return (
     <div className={styles.wrapper}>
@@ -23,7 +25,7 @@ function ProductDetailsPage() {
             className="flex gap-2 items-center text-1xl text-center text-indigo-600 hover:text-indigo-800 font-medium my-2"
           >
             <BackIcon></BackIcon>
-            Seguir Comprando
+            {t("productDetails.backIcon")}
           </Link>
           <h2 className={styles.wrapper__title}>{product.name}</h2>
           <div className={styles.wrapper__img}>
@@ -44,30 +46,17 @@ function ProductDetailsPage() {
                 addToCart={addToCart}
                 className="w-50 py-2 px-2 bg-indigo-600 text-white font-semibold rounded-xl shadow-lg hover:bg-indigo-700 transition duration-300 transform hover:scale-[1.01] focus:outline-none focus:ring-4 focus:ring-indigo-300"
               >
-                Comprar ahora
+                {t("common.buttons.buy")}
               </AddToCartBtn>
             </Link>
           </div>
         </div>
         <aside className={styles.wrapper__sidebarDetails}>
-          <h3 className="my-2">Detalles Adicionales</h3>
+          <h3 className="my-2">{t("productDetails.sidebar.title")}</h3>
           <ul>
-            <li>Envío gratuito en 48 horas</li>
-            <li>Política de devolución de 30 días</li>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-              sagittis neque vitae mi maximus pharetra. Maecenas interdum quam
-              fringilla risus blandit, quis finibus ante congue. Praesent
-              pharetra molestie neque in feugiat. Nam in cursus nunc. Quisque
-              varius dignissim viverra. Nulla sodales tortor a congue
-              pellentesque. Orci varius natoque penatibus et magnis dis
-              parturient montes, nascetur ridiculus mus. Quisque maximus tellus
-              suscipit, consectetur augue vel, vulputate lectus. Aliquam non
-              nunc augue. Donec eget velit sit amet ante condimentum imperdiet a
-              ut lectus. Phasellus at ligula nunc. Duis a ipsum ac neque maximus
-              ultricies. Nulla commodo pharetra diam, a fermentum nibh tristique
-              eget.
-            </li>
+            <li>{t("productDetails.sidebar.shipping")}</li>
+            <li>{t("productDetails.sidebar.returns")}</li>
+            <li>{t("productDetails.sidebar.description")}</li>
           </ul>
         </aside>
       </div>

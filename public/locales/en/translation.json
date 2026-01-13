@@ -1,5 +1,5 @@
 {
-    "common": {
+  "common": {
     "nav": {
       "home": "Home",
       "shop": "Shop"
@@ -16,9 +16,23 @@
       "portability": "Portability!"
     }
   },
-    "footer": {
+  "footer": {
     "services": "Services",
     "about": "About",
     "team": "Team"
+  },
+  "productCard": {
+    "new": "NEW",
+    "price": "Price",
+    "textAdd": "Add to cart"
+  },
+  "productDetails": {
+    "backIcon": "Back to Shop",
+    "sidebar": {
+      "title": "Additional Details",
+      "shipping": "Free shipping within 48 hours",
+      "returns": "30-day return policy",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis neque vitae mi maximus pharetra..."
+    }
   }
 }

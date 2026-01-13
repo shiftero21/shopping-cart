@@ -20,5 +20,19 @@
     "services": "Servicios",
     "about": "Acerca de",
     "team": "Equipo"
+  },
+  "productCard": {
+    "new": "NUEVO",
+    "price": "Precio",
+    "textAdd": "Agregar al carrito"
+  },
+  "productDetails": {
+    "backIcon": "Seguir Comprando",
+    "sidebar": {
+      "title": "Detalles Adicionales",
+      "shipping": "Envío gratuito en 48 horas",
+      "returns": "Política de devolución de 30 días",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sagittis neque vitae mi maximus pharetra..."
+    }
   }
 }

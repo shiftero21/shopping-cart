@@ -4,7 +4,7 @@ const AddToCartBtn = ({ product, addToCart, className, children }) => {
       onClick={() => addToCart(product)}
       className={className}
     >
-      {children || "🛒 Añadir al Carrito"}
+      {children}
     </button>
   );
 };
