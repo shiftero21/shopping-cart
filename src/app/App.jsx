@@ -35,24 +35,24 @@ function App() {
     }
   };
 
-  const removeFromCart = (productId) => {
+  const removeFromCart = (productId, removeAll = false) => {
     const itemIndex = cart.findIndex((item) => item.id === productId);
 
     if (itemIndex >= 0) {
       const currentItem = cart[itemIndex];
 
-      if (currentItem.cantidad > 1) {
-        const updatedItem = {
+      // Si removeAll es true, o si solo queda 1, filtramos el carrito
+      if (removeAll || currentItem.cantidad === 1) {
+        const filteredCart = cart.filter((item) => item.id !== productId);
+        setCart(filteredCart);
+      } else {
+        // Si hay más de uno y no se pidió borrar todo, restamos 1
+        const updatedCart = [...cart];
+        updatedCart[itemIndex] = {
           ...currentItem,
           cantidad: currentItem.cantidad - 1,
         };
-
-        const updatedCart = [...cart];
-        updatedCart[itemIndex] = updatedItem;
         setCart(updatedCart);
-      } else {
-        const filteredCart = cart.filter((item) => item.id !== productId);
-        setCart(filteredCart);
       }
     }
   };

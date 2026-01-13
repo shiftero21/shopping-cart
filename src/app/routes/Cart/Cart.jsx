@@ -2,6 +2,7 @@ import { useOutletContext } from "react-router-dom";
 import { Link } from "react-router-dom";
 import BackIcon from "../../../components/icons/BackIcon";
 import QuantitySelector from "./QuantitySelector";
+import EraseIcon from "../../../components/icons/EraseIcon";
 import { useTranslation } from "react-i18next";
 
 function Cart() {
@@ -93,6 +94,15 @@ function Cart() {
               <p className="text-lg font-bold text-gray-900">
                 ${(item.price * item.cantidad).toFixed(2)}
               </p>
+              <button
+                onClick={() => removeFromCart(item.id, true)}
+                className="text-xs text-blue-500 hover:text-blue-700 underline"
+              >
+                <div className="flex items-center">
+                  <EraseIcon size="24" />
+                  {t("common.buttons.remove")}
+                </div>
+              </button>
             </div>
           </div>
         ))}
