@@ -38,6 +38,7 @@
   "cart": {
     "status": "Tu carrito esta vacio",
     "text": "Añade algunos productos desde la sección de compras.",
+    "quant": "Cantidad: ",
     "title": "Carrito de compras",
     "payment": "Proceder al pago"
   }

@@ -38,6 +38,7 @@
   "cart": {
     "status": "Your cart is empty",
     "text": "Add some products from the shopping section.",
+    "quant": "Quantity: ",
     "title": "Shopping Cart",
     "payment": "Continue to payment"
   }

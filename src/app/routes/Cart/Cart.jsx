@@ -79,7 +79,7 @@ function Cart() {
 
             <div className="text-right ml-4 min-w-[120px]">
               <p className="text-base font-medium text-gray-700">
-                Cant:{" "}
+                {t("cart.quant")}
                 <span className="font-bold text-indigo-600">
                   {item.cantidad}
                 </span>
