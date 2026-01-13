@@ -43,25 +43,22 @@ const products = [
   {
     id: uniqid("prod-"),
     slug: "cargador-portatil-01",
-    name: "Cargador portatil 01",
+    name: "Voltix Pro 10",
     price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c01Front,
     carouselImages: [
-      { id: 1, url: c01Front, alt: "Cargador portatil 01 Front view" },
-      { id: 2, url: c01Details, alt: "Cargador portatil 01 Ports details" },
+      { id: 1, url: c01Front, alt: "Voltix Pro 10 Front view" },
+      { id: 2, url: c01Details, alt: "Voltix Pro 10 Ports details" },
     ],
-    description: "Cargador Portatil 10000 Mah Con Cable Mixio Mp-10",
     category: "tech",
     reviews: [
       {
         name: "John Miller",
-        text: "Solid build quality. The 10000 mAh capacity is spot on, charges my iPhone 15 Pro about twice. The built-in cable is a lifesaver.",
         starCount: 5,
         date: "Dec 12, 2025",
       },
       {
         name: "Sarah Jenkins",
-        text: "A bit bulkier than I imagined, but it performs well. Fast charging works perfectly with my Samsung.",
         starCount: 4,
         date: "Dec 08, 2025",
       },
@@ -70,19 +67,18 @@ const products = [
   {
     id: uniqid("prod-"),
     slug: "cargador-portatil-02",
-    name: "Cargador portatil 02",
+    name: "TitanCharge 20K",
     price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c02Front,
     carouselImages: [
-      { id: 3, url: c02Front, alt: "Cargador portatil 02 Front view" },
-      { id: 4, url: c02Details, alt: "Cargador portatil 02 Port Details" },
+      { id: 3, url: c02Front, alt: "TitanCharge 20K Front view" },
+      { id: 4, url: c02Details, alt: "TitanCharge 20K Port Details" },
     ],
-    description: "Cargador Portatil 20000 Mah Con Cable Mixio Mp-10",
+
     category: "tech",
     reviews: [
       {
         name: "Michael R.",
-        text: "Massive capacity! Perfect for long flights or camping trips. I managed to keep my tablet and phone alive for three days.",
         starCount: 5,
         date: "Nov 30, 2025",
       },
@@ -91,19 +87,17 @@ const products = [
   {
     id: uniqid("prod-"),
     slug: "cargador-portatil-03",
-    name: "Cargador portatil 03",
+    name: "NanoSlim Air",
     price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c03Front,
     carouselImages: [
-      { id: 5, url: c03Front, alt: "Cargador portatil 03 Front view" },
-      { id: 6, url: c03Flat, alt: "Cargador portatil 03 Horizontal view" },
+      { id: 5, url: c03Front, alt: "NanoSlim Air Front view" },
+      { id: 6, url: c03Flat, alt: "NanoSlim Air Horizontal view" },
     ],
-    description: "Cargador Portatil 4000 Mah Con Cable Mixio Mp-10",
     category: "tech",
     reviews: [
       {
         name: "Emily Watson",
-        text: "Super slim and light. It's not for heavy use, but it's the best pocket-sized backup for emergencies.",
         starCount: 4,
         date: "Dec 22, 2025",
       },
@@ -113,23 +107,21 @@ const products = [
   {
     id: uniqid("prod-"),
     slug: "cargador-portatil-04",
-    name: "Cargador portatil 04",
+    name: "Apex LED Digital",
     price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c04Flat,
     carouselImages: [
-      { id: 7, url: c04Flat, alt: "Cargador portatil 04 Front view" },
+      { id: 7, url: c04Flat, alt: "Apex LED Digital Front view" },
       {
         id: 8,
         url: c04Details,
-        alt: "Cargador portatil 04 Porcentages charge",
+        alt: "Apex LED Digital Porcentages charge",
       },
     ],
-    description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
     reviews: [
       {
         name: "Kevin Taylor",
-        text: "The LED display is very accurate. It’s great knowing exactly how much juice is left instead of just guessing with four tiny dots.",
         starCount: 5,
         date: "Dec 01, 2025",
       },
@@ -139,34 +131,32 @@ const products = [
   {
     id: uniqid("prod-"),
     slug: "cargador-portatil-05",
-    name: "Cargador portatil 05",
+    name: "Urban Core 85",
     price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c05Main,
     carouselImages: [
-      { id: 9, url: c05Main, alt: "Cargador portatil 05 Front view" },
+      { id: 9, url: c05Main, alt: "Urban Core 85 Front view" },
       {
         id: 10,
         url: c05Details,
-        alt: "Cargador portatil 05 Back view details",
+        alt: "Urban Core 85 Back view details",
       },
       {
         id: 11,
         url: c05Urban,
-        alt: "Urban lifestyle photo of Cargador portatil 05 in use",
+        alt: "Urban lifestyle photo of Urban Core 85 in use",
       },
-      { id: 12, url: c05Phone, alt: "Cargador portatil 05 charging phone" },
+      { id: 12, url: c05Phone, alt: "Urban Core 85 charging phone" },
       {
         id: 13,
         url: c05Flat,
-        alt: "Cargador portatil 05 details uses in plain",
+        alt: "Urban Core 85 details uses in plain",
       },
     ],
-    description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
     reviews: [
       {
         name: "Jessica B.",
-        text: "I take this everywhere. The urban design looks premium and it fits perfectly in my bag's side pocket. Great everyday carry.",
         starCount: 5,
         date: "Nov 25, 2025",
       },
@@ -176,7 +166,7 @@ const products = [
   {
     id: uniqid("prod-"),
     slug: "cargador-portatil-06",
-    name: "Cargador portatil 06",
+    name: "SteadyCharge S1",
     price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c06Base,
     carouselImages: [
@@ -184,12 +174,10 @@ const products = [
       { id: 15, url: c06Custom },
       { id: 16, url: c06Specs },
     ],
-    description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
     reviews: [
       {
         name: "Mark Stevens",
-        text: "Reliable and simple. It doesn't overheat even when charging at full speed. Best value for the money so far.",
         starCount: 4,
         date: "Nov 15, 2025",
       },
@@ -199,19 +187,17 @@ const products = [
   {
     id: uniqid("prod-"),
     slug: "cargador-portatil-07",
-    name: "Cargador portatil 07",
+    name: "Matte Shell 8.5",
     price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c07Main,
     carouselImages: [
       { id: 17, url: c07Main },
       { id: 18, url: c07Flat },
     ],
-    description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
     reviews: [
       {
         name: "Ryan G.",
-        text: "Standard power bank. Does what it says on the box. The matte finish is nice because it doesn't show fingerprints.",
         starCount: 4,
         date: "Oct 20, 2025",
       },
@@ -221,7 +207,7 @@ const products = [
   {
     id: uniqid("prod-"),
     slug: "cargador-portatil-08",
-    name: "Cargador portatil 08",
+    name: "Crystal PD Ghost",
     price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c08Front,
     carouselImages: [
@@ -233,12 +219,10 @@ const products = [
       { id: 24, url: c08Variant },
       { id: 25, url: c08Vertical },
     ],
-    description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
     reviews: [
       {
         name: "David K.",
-        text: "The transparent aesthetic is stunning. Beyond the looks, the PD charging is fast enough for my MacBook Air. Highly recommended.",
         starCount: 5,
         date: "Dec 15, 2025",
       },
@@ -248,19 +232,17 @@ const products = [
   {
     id: uniqid("prod-"),
     slug: "cargador-portatil-09",
-    name: "Cargador portatil 09",
+    name: "Armor Block X",
     price: Math.floor(Math.random() * (max - min + 1) + min) - 0.01,
     mainImage: c09Flat,
     carouselImages: [
       { id: 26, url: c09Flat },
       { id: 27, url: c09Iso },
     ],
-    description: "Cargador Portatil 8500 Mah Con Cable Mixio Mp-10",
     category: "tech",
     reviews: [
       {
         name: "Alice Cooper",
-        text: "The build is very sturdy. I've dropped it once and it still works perfectly. Excellent port selection for different cables.",
         starCount: 5,
         date: "Oct 05, 2025",
       },

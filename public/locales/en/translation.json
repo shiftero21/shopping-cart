@@ -28,6 +28,7 @@
     "textAdd": "Add to cart"
   },
   "productDetails": {
+    "price": "Price",
     "sidebar": {
       "title": "Additional Details",
       "shipping": "Free shipping within 48 hours",
@@ -41,5 +42,62 @@
     "quant": "Quantity: ",
     "title": "Shopping Cart",
     "payment": "Continue to payment"
+  },
+  "products": {
+    "cargador-portatil-01": {
+      "description": "Portable Charger 10000 mAh With Mixio Mp-10 Cable",
+      "reviews": [
+        "Solid build quality. The 10000 mAh capacity is spot on, charges my iPhone 15 Pro about twice. The built-in cable is a lifesaver.",
+        "A bit bulkier than I imagined, but it performs well. Fast charging works perfectly with my Samsung."
+      ]
+    },
+    "cargador-portatil-02": {
+      "description": "Portable Charger 20000 mAh With Mixio Mp-10 Cable",
+      "reviews": [
+        "Massive capacity! Perfect for long flights or camping trips. I managed to keep my tablet and phone alive for three days."
+      ]
+    },
+    "cargador-portatil-03": {
+      "description": "Portable Charger 4000 mAh With Mixio Mp-10 Cable",
+      "reviews": [
+        "Super slim and light. It's not for heavy use, but it's the best pocket-sized backup for emergencies."
+      ]
+    },
+    "cargador-portatil-04": {
+      "description": "Portable Charger 8500 mAh With Mixio Mp-10 Cable",
+      "reviews": [
+        "The LED display is very accurate. It’s great knowing exactly how much juice is left instead of just guessing with four tiny dots."
+      ]
+    },
+    "cargador-portatil-05": {
+      "description": "Portable Charger 8500 mAh With Mixio Mp-10 Cable",
+      "reviews": [
+        "I take this everywhere. The urban design looks premium and it fits perfectly in my bag's side pocket. Great everyday carry."
+      ]
+    },
+    "cargador-portatil-06": {
+      "description": "Portable Charger 8500 mAh With Mixio Mp-10 Cable",
+      "reviews": [
+        "Reliable and simple. It doesn't overheat even when charging at full speed. Best value for the money so far."
+      ]
+    },
+    "cargador-portatil-07": {
+      "description": "Portable Charger 8500 mAh With Mixio Mp-10 Cable",
+      "reviews": [
+        "Standard power bank. Does what it says on the box. The matte finish is nice because it doesn't show fingerprints."
+      ]
+    },
+    "cargador-portatil-08": {
+      "description": "Portable Charger 8500 mAh With Mixio Mp-10 Cable",
+      "reviews": [
+        "The transparent aesthetic is stunning. Beyond the looks, the PD charging is fast enough for my MacBook Air. Highly recommended."
+      ]
+    },
+    "cargador-portatil-09": {
+      "description": "Portable Charger 8500 mAh With Mixio Mp-10 Cable",
+      "reviews": [
+        "The build is very sturdy. I've dropped it once and it still works perfectly. Excellent port selection for different cables."
+      ]
+    }
   }
 }
