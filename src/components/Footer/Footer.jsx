@@ -146,7 +146,7 @@ export default function Footer({ currentColor = "white" }) {
           </a>
           <a
             target="_blank"
-            href="https://github.com/TheOdinProject"
+            href="https://github.com/shiftero21"
           >
             Developed by Shifter©
           </a>
