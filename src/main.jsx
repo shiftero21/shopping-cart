@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import routes from "./app/router";
 import { Suspense } from "react";
 import i18n from "./i18next";
-import { Analytics } from "@vercel/analytics/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const router = createBrowserRouter(routes);
 
