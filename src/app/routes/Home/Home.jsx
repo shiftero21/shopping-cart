@@ -30,11 +30,14 @@ const carrouselData2 = [
 
 const HomePage = () => {
   const { t } = useTranslation();
+
   const featuredReviews = products.flatMap((product) =>
-    product.reviews.map((rev) => ({
+    product.reviews.map((rev, index) => ({
       ...rev,
       productImg: product.mainImage,
       productId: product.id,
+      productSlug: product.slug,
+      originalIndex: index,
     }))
   );
 
@@ -80,9 +83,11 @@ const HomePage = () => {
       <div className={styles.home__reviews_container}>
         {featuredReviews.map((review, index) => (
           <Review
-            key={`${review.productId}-${index}`}
+            key={`${review.productId}-${review.originalIndex}`}
             name={review.name}
-            text={review.text}
+            text={t(
+              `products.${review.productSlug}.reviews.${review.originalIndex}`
+            )}
             starCount={review.starCount}
             date={review.date}
           >
