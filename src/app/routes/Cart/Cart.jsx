@@ -20,8 +20,7 @@ function Cart() {
           to="/shopping"
           className="flex gap-2 items-center text-2xl text-center text-indigo-600 hover:text-indigo-800 font-medium my-2"
         >
-          <BackIcon></BackIcon>
-          {t("common.buttons.backIcon")}
+          <BackIcon>{t("common.buttons.backIcon")}</BackIcon>
         </Link>
         <h1 className="text-3xl font-bold text-gray-700 mb-4">
           {t("cart.status")}😔
